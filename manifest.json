@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Metab",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Learn how your mind works, one new tab at a time. Mental models, biases, emotions, and rhetoric as small daily cards.",
   "chrome_url_overrides": {
     "newtab": "newtab.html"

@@ -28,6 +28,11 @@
   box-sizing: border-box;
 }
 
+/* The hidden attribute must always win, even over display: flex below. */
+[hidden] {
+  display: none !important;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
