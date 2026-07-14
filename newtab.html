@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <main class="card" id="card">
+    <div class="category" id="category"></div>
+
+    <!-- Scenario-first view -->
+    <section id="scenario-view" hidden>
+      <p class="scenario" id="scenario"></p>
+      <button class="reveal-btn" id="reveal-btn">What is this?</button>
+    </section>
+
+    <!-- Full concept view -->
+    <section id="concept-view" hidden>
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Category path"></nav>
+      <h1 class="term" id="term"></h1>
+      <p class="definition" id="definition"></p>
+      <div class="confused" id="confused" hidden>
+        <span class="confused-label">Often confused with</span>
+        <p id="confused-text"></p>
+      </div>
+      <div class="try-today" id="try-today" hidden>
+        <span class="try-label">Try it today</span>
+        <p id="try-text"></p>
+      </div>
+      <div class="links" id="links"></div>
+    </section>
+
+    <footer class="card-footer" id="card-footer" hidden>
+      <button class="ghost-btn" id="back-btn" hidden>&larr; Back to the situation</button>
+      <button class="ghost-btn" id="another-btn">Show another</button>
+    </footer>
+  </main>
+  <script src="newtab.js"></script>
+</body>
+</html>

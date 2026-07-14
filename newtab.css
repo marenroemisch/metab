@@ -1,0 +1,174 @@
+:root {
+  --bg: #f5f4f1;
+  --card-bg: #ffffff;
+  --text: #1a1a1a;
+  --text-soft: #6b6b6b;
+  --accent: #b3543f;
+  --btn-text: #ffffff;
+  --border: #e6e4df;
+  --shadow: 0 2px 24px rgba(0, 0, 0, 0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1817;
+    --card-bg: #232020;
+    --text: #ececec;
+    --text-soft: #9a9a9a;
+    --accent: #d98b75;
+    --btn-text: #2a1712;
+    --border: #363130;
+    --shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  max-width: 640px;
+  width: 100%;
+  padding: 48px 56px 32px;
+}
+
+.category {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+/* Scenario view */
+.scenario {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 1.45;
+  margin-bottom: 28px;
+}
+
+.reveal-btn {
+  background: var(--accent);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 10px 22px;
+  cursor: pointer;
+}
+
+.reveal-btn:hover {
+  opacity: 0.9;
+}
+
+/* Concept view */
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 10px;
+}
+
+.breadcrumb span.sep {
+  margin: 0 6px;
+  opacity: 0.5;
+}
+
+.term {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.definition {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.confused,
+.try-today {
+  border-top: 1px solid var(--border);
+  padding: 14px 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.confused-label,
+.try-label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin-bottom: 4px;
+}
+
+.links {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.card-footer {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer #another-btn {
+  margin-left: auto;
+}
+
+.ghost-btn {
+  background: none;
+  border: none;
+  color: var(--text-soft);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 8px;
+}
+
+.ghost-btn:hover {
+  color: var(--text);
+}
+
+@media (max-width: 520px) {
+  .card {
+    padding: 32px 24px 20px;
+  }
+  .term {
+    font-size: 30px;
+  }
+  .scenario {
+    font-size: 20px;
+  }
+}
