@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metab settings</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body class="options-body">
+  <main class="options">
+    <h1 class="options-title">Metab settings</h1>
+
+    <section class="options-group">
+      <h2 class="options-heading">Show these categories</h2>
+      <p class="options-note">Cards are drawn only from the categories you keep switched on.</p>
+      <div id="category-toggles" class="toggle-list"></div>
+    </section>
+
+    <section class="options-group">
+      <h2 class="options-heading">New card</h2>
+      <label class="radio-row">
+        <input type="radio" name="frequency" value="tab">
+        <span>On every new tab <span class="options-default">(default)</span></span>
+      </label>
+      <label class="radio-row">
+        <input type="radio" name="frequency" value="day">
+        <span>Once per day</span>
+      </label>
+    </section>
+
+    <p class="options-saved" id="saved-note" hidden>Saved</p>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

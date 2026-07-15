@@ -10,7 +10,7 @@ How your mind reasons, judges, and misjudges. The object of awareness is your ow
 |---|---|---|---|
 | Mental Models | Reframing, Scope & Limits, Decision Tools | Inversion, First Principles, Map vs. Territory, Circle of Competence, Second-Order Thinking | Editorial. Only models about one's own cognition qualify (see Rule 5). |
 | Cognitive Biases | Belief & Confirmation, Judgment & Estimation, Memory, Risk & Loss | Confirmation Bias, Anchoring, Availability Heuristic, Sunk Cost Fallacy, Rosy Retrospection | Heuristics-and-biases research (Kahneman & Tversky tradition) |
-| Cognitive Distortions | - | Catastrophizing, Black-and-White Thinking, Mind Reading, Overgeneralization | CBT literature (Beck, Burns) |
+| Cognitive Distortions | - | Catastrophizing, Black-and-White Thinking, Overgeneralization, Emotional Reasoning | CBT literature (Beck, Burns) |
 | Mindsets & Self-Beliefs | - | Growth Mindset, Fixed Mindset, Learned Helplessness, Self-Efficacy, Impostor Phenomenon | Psychology of self-beliefs (Dweck, Bandura, Seligman) |
 
 Example breadcrumbs:
@@ -38,7 +38,7 @@ How you read and misread other people. The object of awareness is your perceptio
 | Branch | Sub-branches | Examples | Grounding |
 |---|---|---|---|
 | Empathy & Perspective-Taking | - | Cognitive Empathy, Affective Empathy, Compassion, Theory of Mind | Social cognition research |
-| Social Biases & Attribution | - | Fundamental Attribution Error, Halo Effect, In-Group Bias, Projection, Spotlight Effect | Social psychology |
+| Social Biases & Attribution | - | Fundamental Attribution Error, Halo Effect, In-Group Bias, Projection, Mind Reading, Spotlight Effect | Social psychology |
 | Social Dynamics | - | Reciprocity, Social Proof, Sonder, Pluralistic Ignorance | Social psychology; editorial selection |
 
 Example breadcrumbs:
@@ -64,7 +64,7 @@ Example breadcrumbs:
 
 Apply in order. Rule 1 decides most cases.
 
-1. **Object of awareness.** When a user recognizes this concept in real life, what are they observing? Their own reasoning: Thinking. Their own emotional state: Feeling. Their perception of another person: Relating. An exchange of words: Communicating.
+1. **Object of awareness.** When a user recognizes this concept in real life, what are they observing? Their own reasoning: Thinking. Their own emotional state: Feeling. Their perception of another person: Relating. An exchange of words: Communicating. Object of awareness beats academic origin: Mind Reading is a CBT cognitive distortion, but what the user observes is another person's supposed judgment of them, so it lives in Relating, not Thinking.
 2. **Bias vs. fallacy.** Does it happen silently inside one head (bias, Thinking) or between people in language (fallacy, Communicating)? Confirmation bias needs no conversation. A strawman needs one.
 3. **Socially triggered feelings stay in Feeling.** Envy, embarrassment, and jealousy are triggered by others but observed in yourself. Empathy goes to Relating because its object is the other person's state, not your own.
 4. **Dual fits get one home.** Choose by the primary object of awareness, list the second reading under `related`. Example: Halo Effect is a judgment error (Thinking) about people (Relating); its primary object is your perception of a person, so Relating.
