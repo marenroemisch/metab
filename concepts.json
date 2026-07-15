@@ -1,0 +1,912 @@
+{
+  "$schema-note": "One object per concept. Required: id, term, category, breadcrumb, definition. Optional: scenario, confusedWith, tryToday, links, related. Categories: thinking | feeling | relating | communicating. See TAXONOMY.md for breadcrumb trees and categorization rules.",
+  "concepts": [
+    {
+      "id": "strawman-argument",
+      "term": "Strawman Argument",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies",
+        "Relevance"
+      ],
+      "scenario": "You propose flexible working hours. A colleague responds: 'So you want people to stop showing up to work at all?'",
+      "definition": "Misrepresenting someone's position as a weaker or more extreme version, then attacking that version instead of the actual argument.",
+      "confusedWith": {
+        "id": "steelman-argument",
+        "note": "The steelman is the deliberate opposite: restating the other position in its strongest form before responding."
+      },
+      "tryToday": "Next time you disagree, restate the other person's point until they say 'yes, exactly' before you respond.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Straw_man"
+        }
+      ],
+      "related": [
+        "ad-hominem",
+        "steelman-argument"
+      ]
+    },
+    {
+      "id": "confirmation-bias",
+      "term": "Confirmation Bias",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases",
+        "Belief & Confirmation"
+      ],
+      "scenario": "You suspect a coworker dislikes you. From that day on, you notice every short reply they send and overlook every friendly one.",
+      "definition": "The tendency to search for, interpret, and recall information in a way that confirms what you already believe, while giving less attention to evidence against it.",
+      "confusedWith": {
+        "id": "cherry-picking",
+        "note": "Cherry picking is the deliberate selection of supporting evidence. Confirmation bias usually operates without awareness."
+      },
+      "tryToday": "Pick one belief you hold about a person or plan and actively look for one piece of evidence against it.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Confirmation_bias"
+        }
+      ],
+      "related": [
+        "availability-heuristic",
+        "anchoring"
+      ]
+    },
+    {
+      "id": "disappointment",
+      "term": "Disappointment",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Sadness"
+      ],
+      "scenario": "You worked toward the promotion for a year. The announcement names someone else, and the feeling is heavier than frustration but quieter than anger.",
+      "definition": "The emotional response when an expected positive outcome does not occur. The feeling requires a prior expectation: the same event without one would not disappoint.",
+      "confusedWith": {
+        "id": "regret",
+        "note": "Regret points at your own choices ('I should have'). Disappointment points at outcomes outside your control ('It should have')."
+      },
+      "tryToday": "When something lands wrong today, ask: did I expect something specific here? Naming the expectation often shrinks the feeling.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Disappointment"
+        }
+      ],
+      "related": [
+        "regret",
+        "disillusionment"
+      ]
+    },
+    {
+      "id": "inversion",
+      "term": "Inversion",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mental Models",
+        "Reframing"
+      ],
+      "scenario": "Your team plans a product launch by listing success factors. Someone asks instead: 'What would guarantee this launch fails?' The room fills a whiteboard in five minutes.",
+      "definition": "Approaching a problem backwards: instead of asking how to achieve a goal, ask what would prevent or destroy it, then avoid those things. Often the failure modes are clearer than the success factors.",
+      "confusedWith": {
+        "id": "premortem",
+        "note": "A premortem is a specific meeting format built on inversion: assume the project already failed and explain why."
+      },
+      "tryToday": "Take one current goal and write down three things that would reliably make it fail. Check if you are doing any of them.",
+      "links": [
+        {
+          "label": "Farnam Street: Inversion",
+          "url": "https://fs.blog/inversion/"
+        }
+      ],
+      "related": [
+        "premortem",
+        "second-order-thinking"
+      ]
+    },
+    {
+      "id": "disillusionment",
+      "term": "Disillusionment",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Sadness"
+      ],
+      "scenario": "You joined the company because of its stated values. In a meeting, you watch leadership quietly drop them the moment they cost money, and _something_ in you goes flat.",
+      "definition": "A heavy feeling arising from the realization that something is not what you believed it to be. It removes the lens you saw things through, which is why it changes how everything afterwards looks.",
+      "confusedWith": {
+        "id": "disappointment",
+        "note": "Disappointment mourns an outcome. Disillusionment mourns a belief: the outcome merely revealed it."
+      },
+      "tryToday": "The word carries a second, older meaning: the freeing from an illusion. If you experienced disillusionment, ask what the collapsed belief had been costing you, and what it made possible for you to now see clearly.",
+      "links": [
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/disillusionment"
+        }
+      ],
+      "related": [
+        "disappointment",
+        "grief"
+      ]
+    },
+    {
+      "id": "grief",
+      "term": "Grief",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Sadness"
+      ],
+      "scenario": "Months after the funeral, you see their favorite biscuits in the supermarket. The song you were humming stops, and your throat closes.",
+      "definition": "The response to the loss of something deemed important, above all the death of a person or animal you were bonded to. It reaches beyond feeling into body, thought, and behavior, and it arrives in waves triggered by reminders rather than as a steady state.",
+      "confusedWith": {
+        "id": "mourning",
+        "note": "Mourning is the outward expression of loss, shaped by culture: the funeral, the rituals, the clothes. Grief is the inner response, and it follows no schedule."
+      },
+      "tryToday": "If a wave hits, do not rate yourself on how long ago the loss was. Waves are how grief works, not a sign of failing to move on.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Grief"
+        }
+      ],
+      "related": [
+        "disillusionment",
+        "nostalgia"
+      ]
+    },
+    {
+      "id": "loneliness",
+      "term": "Loneliness",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Sadness"
+      ],
+      "scenario": "Sunday evening. You scroll through your contacts, dozens of names, and cannot find one person just to tell about your day.",
+      "definition": "The emotional response to isolation, described by researchers as social pain: a signal that pushes you to seek connection the way hunger pushes you to eat. It follows perceived closeness, which is why it can occur in a crowd or a relationship.",
+      "confusedWith": {
+        "id": "solitude",
+        "note": "Solitude is chosen aloneness and often restorative. Loneliness is unchosen disconnection and can occur with people all around."
+      },
+      "tryToday": "If you feel it, name which connection is missing: being known, being needed, or shared experience. They often require different coping strategies.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Loneliness"
+        }
+      ],
+      "related": [
+        "nostalgia",
+        "grief"
+      ]
+    },
+    {
+      "id": "nostalgia",
+      "term": "Nostalgia",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Sadness"
+      ],
+      "scenario": "A song from a summer fifteen years ago comes on, and for three minutes you are warm and sad at the same time, remembering what once was.",
+      "definition": "A sentimental view of the past, typically of a period or place with happy personal associations. It is often described as a sad pleasure: a longing for something, real or romanticized, that cannot be recovered. The word originally meant homesickness.",
+      "confusedWith": {
+        "id": "rumination",
+        "note": "Nostalgia visits the past and returns warmer. Rumination circles the past looking for what went wrong and returns worse."
+      },
+      "tryToday": "Use it deliberately: revisit one good memory with someone who shares it and notice the effect on your mood.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nostalgia"
+        }
+      ],
+      "related": [
+        "grief",
+        "contentment"
+      ]
+    },
+    {
+      "id": "regret",
+      "term": "Regret",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Sadness"
+      ],
+      "scenario": "You stayed quiet in the meeting where it mattered. On the drive home, the sentence you should have said keeps replaying in your head.",
+      "definition": "The wish of having decided differently in the past, because the consequences of the choice you made turned out badly for you. It tracks perceived opportunity: the more choice you had, the more room regret has.",
+      "confusedWith": {
+        "id": "disappointment",
+        "note": "Disappointment blames the world. Regret blames your own decision."
+      },
+      "tryToday": "Turn one recurring regret into one sentence of instruction for your future self, then let the replay go. Regret's only useful output is the lesson.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Regret"
+        }
+      ],
+      "related": [
+        "disappointment",
+        "guilt"
+      ]
+    },
+    {
+      "id": "anxiety",
+      "term": "Anxiety",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Fear"
+      ],
+      "scenario": "Nothing is wrong today. Still, your chest is tight and your mind keeps scanning for something that might be.",
+      "definition": "A state of inner turmoil over anticipated events: the response to a future threat rather than a present one. It often shows in the body, in restlessness, and in circular thinking.",
+      "confusedWith": {
+        "id": "fear",
+        "note": "Fear has an object here and now: the dog is loose. Anxiety has a maybe, later: what if this event goes wrong."
+      },
+      "tryToday": "When it rises, ask: is there a specific threat in this room, right now? If not, name the future scene your mind is rehearsing out loud.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Anxiety"
+        }
+      ],
+      "related": [
+        "dread",
+        "secondary-emotions"
+      ]
+    },
+    {
+      "id": "dread",
+      "term": "Dread",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Fear"
+      ],
+      "scenario": "The difficult conversation is booked for Friday at 14:00. It is Tuesday, and Friday already sits on your chest.",
+      "definition": "The weighing anticipation of a specific event you see coming and feel unable to avoid. It has a known object and often a date.",
+      "confusedWith": {
+        "id": "anxiety",
+        "note": "Anxiety is diffuse: something might go wrong. Dread is scheduled: this particular thing is coming."
+      },
+      "tryToday": "For one dreaded event, write down what the first two minutes of it will actually involve. Dread inflates events; specifics shrink them.",
+      "links": [
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/dread"
+        }
+      ],
+      "related": [
+        "anxiety"
+      ]
+    },
+    {
+      "id": "jealousy",
+      "term": "Jealousy",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Fear"
+      ],
+      "scenario": "Your closest friend keeps mentioning their new colleague: the inside jokes, the lunches. While they talk positively about this person, your opinion of them worsens.",
+      "definition": "Thoughts and feelings of insecurity and concern over losing something valued (classically the attention or affection of a person who matters) to someone else. It is a three-party experience: you, the person who matters, and the rival, real or imagined.",
+      "confusedWith": {
+        "id": "envy",
+        "note": "Envy wants what another person has. Jealousy fears losing what you have to another person. Envy needs two parties, jealousy three."
+      },
+      "tryToday": "If it flares, locate the underlying fear: what exactly do you fear losing, and is there evidence it is actually at risk?",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jealousy"
+        }
+      ],
+      "related": [
+        "envy",
+        "anxiety"
+      ]
+    },
+    {
+      "id": "frustration",
+      "term": "Frustration",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Anger"
+      ],
+      "scenario": "The form rejects your input for the fourth time without saying why. You notice an urge to slap the laptop shut.",
+      "definition": "The emotional response to opposition: it arises from perceived resistance to what you are trying to do, and it grows the longer the goal stays blocked or denied.",
+      "confusedWith": {
+        "id": "anger",
+        "note": "Anger has a culprit and an impulse to strike back. Frustration has an obstacle and an impulse to push through. Blocked long enough, it converts into anger."
+      },
+      "tryToday": "When it spikes, name the blocked goal out loud. Often you can either change the approach or drop the goal, and both dissolve the feeling.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Frustration"
+        }
+      ],
+      "related": [
+        "resentment"
+      ]
+    },
+    {
+      "id": "resentment",
+      "term": "Resentment",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Anger"
+      ],
+      "scenario": "You covered for your teammate all quarter. They got the praise, you said 'no problem', and now every small thing they do irritates you.",
+      "definition": "A complex, layered response to insult or injury, also called bitterness. It is usually unexpressed, builds over time, and is re-fed each time the unfairness is replayed.",
+      "confusedWith": {
+        "id": "contempt",
+        "note": "Resentment looks up or across: they wronged me. Contempt looks down: they are beneath standards. Resentment wants acknowledgment; contempt has written the person off."
+      },
+      "tryToday": "Resentment often marks a boundary you never voiced. Find the unspoken 'no' behind one resentment you carry.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Resentment"
+        }
+      ],
+      "related": [
+        "frustration",
+        "contempt",
+        "envy"
+      ]
+    },
+    {
+      "id": "envy",
+      "term": "Envy",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Anger"
+      ],
+      "scenario": "A former classmate posts about their book deal. You type 'congrats!!' and feel _something sour_ that you would not admit to anyone.",
+      "definition": "What occurs when another person has a quality, achievement, or possession you lack, and you either desire it or wish they lacked it too. The two halves matter: one points you at a goal, the other against a person.",
+      "confusedWith": {
+        "id": "jealousy",
+        "note": "Envy wants what another person has. Jealousy fears losing what you have to another person."
+      },
+      "tryToday": "Envy is data about what you want. Think of the last time you felt envy and translate it into the goal it points at.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Envy"
+        }
+      ],
+      "related": [
+        "jealousy",
+        "admiration",
+        "resentment"
+      ]
+    },
+    {
+      "id": "contentment",
+      "term": "Contentment",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Joy"
+      ],
+      "scenario": "Sunday evening, dishes done, nothing achieved and nothing missing. For once you are not reaching for your phone to add anything.",
+      "definition": "Being satisfied with your current situation and at inner peace with how things presently are. It is quiet and undemanding, which makes it easy to overlook and undervalue.",
+      "confusedWith": {
+        "id": "complacency",
+        "note": "Contentment is an emotion that what you have is enough; it doesn't reduce motivation. Complacency is an attitude of self-satisfaction that blinds you to real risks and shortcomings."
+      },
+      "tryToday": "Catch one moment today where nothing is missing, and give it ten full seconds before moving on. Contentment grows by being noticed.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Contentment"
+        }
+      ],
+      "related": [
+        "gratitude",
+        "relief"
+      ]
+    },
+    {
+      "id": "awe",
+      "term": "Awe",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Joy"
+      ],
+      "scenario": "You step out of the mountain hut at night, look up, and the sheer number of stars briefly deletes whatever you were worrying about.",
+      "definition": "A feeling of wonder before something vast, from a night sky to an idea, that your usual frame of reference cannot contain. Research links it to a smaller sense of self and more generous behavior.",
+      "confusedWith": {
+        "id": "admiration",
+        "note": "Admiration responds to excellence on a human scale and says 'I could strive for that'. Awe responds to vastness beyond scale and says 'I am small'."
+      },
+      "tryToday": "Awe is available on demand: give two minutes of full attention to something genuinely vast, the sky, time, the sea, and notice how it feels.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Awe"
+        }
+      ],
+      "related": [
+        "admiration",
+        "gratitude"
+      ]
+    },
+    {
+      "id": "gratitude",
+      "term": "Gratitude",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Joy"
+      ],
+      "scenario": "A colleague quietly fixed the mess in your handover while you were sick. Reading it, you feel a warmth that wants to be said out loud.",
+      "definition": "The appreciation felt by the receiver of another's kindness, whether gifts, help, favors, or generosity. It has a direction: it points toward the person it came from and wants to be expressed.",
+      "confusedWith": {
+        "id": "indebtedness",
+        "note": "Gratitude feels warm and wants to give freely. Indebtedness feels like pressure and wants to settle a score. The same favor can trigger either."
+      },
+      "tryToday": "Deliver one unsent thank-you today, naming specifically what the person did. Expressing gratitude modestly improves wellbeing and life satisfaction, according to controlled studies.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gratitude"
+        }
+      ],
+      "related": [
+        "contentment",
+        "admiration"
+      ]
+    },
+    {
+      "id": "relief",
+      "term": "Relief",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Joy"
+      ],
+      "scenario": "The doctor says the word 'benign' and your whole body exhales a breath you did not know you were holding since last Tuesday.",
+      "definition": "The release when an expected bad outcome does not happen or a strain ends. It is defined by what did not occur, which is why it needs prior tension to exist.",
+      "confusedWith": {
+        "id": "contentment",
+        "note": "Contentment is satisfaction that stands on its own. Relief is tied to an averted negative and fades as the threat's memory fades."
+      },
+      "tryToday": "Notice what your relief today points back to: it is a precise map of what you had actually been fearing, often more honest than what you claimed to fear.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Relief_(emotion)"
+        }
+      ],
+      "related": [
+        "contentment",
+        "anxiety"
+      ]
+    },
+    {
+      "id": "admiration",
+      "term": "Admiration",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Trust"
+      ],
+      "scenario": "You watch a colleague handle a hostile question with complete calm and precision, and instead of feeling smaller, you catch yourself taking notes.",
+      "definition": "Warm approval of another person's excellence or skill, with a pull toward learning from it. It studies what it sees rather than measuring itself against it.",
+      "confusedWith": {
+        "id": "respect",
+        "note": "Both are positive responses to another's excellence: Respect acknowledges from a distance; admiration pulls you to learn from it."
+      },
+      "tryToday": "Pick one person you admire and extract the learning: what exactly do they do that you could practice? Admiration unused is just spectating.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Admiration"
+        }
+      ],
+      "related": [
+        "envy",
+        "awe",
+        "gratitude"
+      ]
+    },
+    {
+      "id": "hope",
+      "term": "Hope",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Anticipation"
+      ],
+      "scenario": "The test results are due Thursday. You keep catching yourself planning what you will do if it is good news, carefully, as if not to jinx it.",
+      "definition": "A state of mind based on expecting a wanted outcome in your own life or the world at large: in the dictionary's words, to cherish a desire with anticipation. It needs both parts, the wanting and the believed possibility.",
+      "confusedWith": {
+        "id": "optimism",
+        "note": "Optimism is a general expectation that things tend to work out. Hope is specific to one outcome and survives even when the odds are poor."
+      },
+      "tryToday": "For one thing you hope for, identify the part you can influence and act on. Hope research finds it strongest when paired with a pathway, not just a wish.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hope"
+        }
+      ],
+      "related": [
+        "anxiety",
+        "dread"
+      ]
+    },
+    {
+      "id": "confusion",
+      "term": "Confusion",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Surprise"
+      ],
+      "scenario": "Twenty minutes into the tutorial, the step that should work does not, and you can no longer tell which of your assumptions is the broken one.",
+      "definition": "The state of being bewildered or unclear: what is in front of you no longer fits what you thought you knew. Learning research treats it as the marker of exactly the spot where understanding can grow.",
+      "confusedWith": {
+        "id": "overwhelm",
+        "note": "Confusion is a model mismatch: this does not fit. Overwhelm is a capacity breach: this is too much at once. Confusion needs rethinking, overwhelm needs reducing."
+      },
+      "tryToday": "Next time you feel it, resist the urge to escape. Write down the exact sentence or step where it started; that sentence marks the boundary of your current understanding.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Confusion"
+        }
+      ],
+      "related": [
+        "boredom"
+      ]
+    },
+    {
+      "id": "contempt",
+      "term": "Contempt",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Disgust"
+      ],
+      "scenario": "Your partner explains, again, why they were late. You hear yourself answer with a small laugh through the nose and one raised corner of the mouth.",
+      "definition": "The act of despising: a settled lack of respect that places someone beneath your standards. In relationship research it is the strongest observed predictor of divorce, because it communicates worthlessness rather than disagreement.",
+      "confusedWith": {
+        "id": "resentment",
+        "note": "Resentment says 'you wronged me' and still wants something from the person. Contempt says 'you are lesser' and has stopped wanting."
+      },
+      "tryToday": "The sneer and the eye-roll are contempt's uniform. If you catch either on your own face today, ask what standard the person violated, and whether they know that standard exists.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Contempt"
+        }
+      ],
+      "related": [
+        "resentment"
+      ]
+    },
+    {
+      "id": "boredom",
+      "term": "Boredom",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Disgust"
+      ],
+      "scenario": "The meeting enters its fortieth minute. You have read every item on the whiteboard twice and are now studying the ceiling vents.",
+      "definition": "Uninterest in your surroundings, often caused by a lack of anything to occupy you: attention with nowhere to go. At its core it is a low-grade aversion to the present situation.",
+      "confusedWith": {
+        "id": "apathy",
+        "note": "Boredom is unspent energy that wants engagement and finds none. Apathy has stopped wanting engagement at all."
+      },
+      "tryToday": "Sit through 15 minutes of boredom today without reaching for your phone. Boredom pushes the mind into mind-wandering, which research links to more original ideas ... the same reason they surface in the shower :)",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Boredom"
+        }
+      ],
+      "related": [
+        "confusion",
+        "frustration"
+      ]
+    },
+    {
+      "id": "shame",
+      "term": "Shame",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Self-Conscious"
+      ],
+      "scenario": "The mistake was small and nobody mentioned it twice. But for the rest of the day a voice repeats it over and over again, making you feel small and worthless.",
+      "definition": "A self-conscious emotion arising from judging yourself as falling short of social norms or your own moral standards. The verdict lands on the whole self, which is why it pushes toward hiding rather than repair.",
+      "confusedWith": {
+        "id": "guilt",
+        "note": "Both follow a wrongdoing, but guilt says 'I did a bad thing' and moves you to fix it; shame says 'I am a bad thing' and moves you to disappear."
+      },
+      "tryToday": "When the global verdict arrives ('I am like this'), force it back into a specific one ('I did this, once, in this situation'). Specific verdicts can be acted on.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Shame"
+        }
+      ],
+      "related": [
+        "guilt",
+        "embarrassment"
+      ]
+    },
+    {
+      "id": "guilt",
+      "term": "Guilt",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Self-Conscious"
+      ],
+      "scenario": "You snapped at your kid over nothing this morning. All day, in the back of your head, you replay this situation, wondering how to apologise.",
+      "definition": "A moral emotion that occurs when you believe, accurately or not, that you have compromised your own standards of conduct. Its function is repair: it prompts efforts to make amends and restore the relationship.",
+      "confusedWith": {
+        "id": "shame",
+        "note": "Guilt says 'I did bad' and looks for repair. Shame says 'I am bad' and tries to hide."
+      },
+      "tryToday": "If guilt is drafting an apology in your head, deliver it today. Undelivered repair can develop into either shame or self-justification.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Guilt_(emotion)"
+        }
+      ],
+      "related": [
+        "shame",
+        "regret"
+      ]
+    },
+    {
+      "id": "embarrassment",
+      "term": "Embarrassment",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Self-Conscious"
+      ],
+      "scenario": "You wave back enthusiastically before realizing the greeting was aimed at the person behind you. Your face is hot for thirty seconds.",
+      "definition": "The discomfort felt when a socially unacceptable act of yours is witnessed by or revealed to others. It needs an audience and fades fast, and it signals that you know the rules you just broke.",
+      "confusedWith": {
+        "id": "shame",
+        "note": "Embarrassment needs witnesses and passes in minutes. Shame needs no audience and can last years."
+      },
+      "tryToday": "Notice how fast today's small embarrassments fade for the witnesses. You replay what others never stored.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Embarrassment"
+        }
+      ],
+      "related": [
+        "shame"
+      ]
+    },
+    {
+      "id": "pride",
+      "term": "Pride",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Self-Conscious"
+      ],
+      "scenario": "You reread the report you spent three weeks on, and for a moment before the self-criticism starts, it is simply _good_ and _you made it_.",
+      "definition": "A sense of security and satisfaction in your identity, performance, or accomplishments. Research splits it in two: authentic pride, earned through effort ('I worked for this'), and hubristic pride, claimed as identity ('I am superior').",
+      "confusedWith": {
+        "id": "confidence",
+        "note": "Confidence is a steady baseline belief in your ability; pride is the acute spike of feeling that follows an accomplishment. You can feel proud without being a confident person, and vice versa."
+      },
+      "tryToday": "Let earned pride stand for ten seconds today before qualifying it. Deflecting all pride is not humility; it erases the feedback that effort worked.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pride"
+        }
+      ],
+      "related": [
+        "shame",
+        "admiration"
+      ]
+    },
+    {
+      "id": "emotional-granularity",
+      "term": "Emotional Granularity",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Dynamics & Skills"
+      ],
+      "scenario": "Two colleagues have the same rough day. One says 'I feel awful'. The other says 'I am mostly disappointed, a bit embarrassed, and honestly somewhat relieved'. The second one is already halfway through processing it.",
+      "definition": "The ability to differentiate between emotions with precision, labeling experiences with specific words where others say 'good' or 'awful'. Higher granularity is linked to better coping, because precise feelings suggest precise responses.",
+      "confusedWith": {
+        "id": "emotional-intelligence",
+        "note": "Emotional intelligence spans noticing, using, and managing feelings in yourself and others. Granularity is one specific skill inside it: telling your own feelings apart precisely."
+      },
+      "tryToday": "Once today, upgrade a 'fine' or 'stressed' to three more precise words. This entire product is granularity training in disguise.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Emotional_granularity"
+        }
+      ],
+      "related": [
+        "affect-labeling",
+        "secondary-emotions"
+      ]
+    },
+    {
+      "id": "affect-labeling",
+      "term": "Affect Labeling",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Dynamics & Skills"
+      ],
+      "scenario": "Mid-argument, you say out loud: 'Okay, I notice I am getting defensive.' The sentence itself takes some pressure out of the room, including in you.",
+      "definition": "An emotion regulation strategy described simply as putting feelings into words. Explicitly labeling a state reduces its felt intensity and the body's response to it, the mechanism behind 'name it to tame it'.",
+      "confusedWith": {
+        "id": "venting",
+        "note": "Labeling names the feeling once and observes it. Venting re-enacts the feeling repeatedly, which rehearses rather than reduces it."
+      },
+      "tryToday": "Next strong feeling, say its precise name silently to yourself in one sentence, and notice the small step back it creates.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Affect_labeling"
+        }
+      ],
+      "related": [
+        "emotional-granularity",
+        "cognitive-reappraisal"
+      ]
+    },
+    {
+      "id": "cognitive-reappraisal",
+      "term": "Cognitive Reappraisal",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Dynamics & Skills"
+      ],
+      "scenario": "Your talk got moved to the small room. First reading: they are sidelining me. Second reading: smaller room, full seats, better discussion. Your pulse follows whichever reading you keep.",
+      "definition": "Changing what you feel by changing your interpretation of the situation, before the emotion fully unfolds. One of the best-studied regulation strategies, and consistently more effective than suppressing the feeling once it is there.",
+      "confusedWith": {
+        "id": "toxic-positivity",
+        "note": "Reappraisal finds a different true reading of the facts. Toxic positivity denies the facts. 'The feedback stings and contains one useful point' reappraises; 'everything happens for a reason' erases."
+      },
+      "tryToday": "Take one irritation today and generate a second, equally factual interpretation. Notice that your body responds to the story, not the event.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cognitive_reappraisal"
+        }
+      ],
+      "related": [
+        "affect-labeling",
+        "expressive-suppression"
+      ]
+    },
+    {
+      "id": "expressive-suppression",
+      "term": "Expressive Suppression",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Dynamics & Skills"
+      ],
+      "scenario": "The criticism in the meeting stings, but you keep your face perfectly still. Afterwards you cannot recall half of what was said next, and you are exhausted.",
+      "definition": "Hiding the outward signs of an emotion while continuing to feel it. It works socially in the moment but is costly: habitual suppression is linked to worse memory of the situation, higher physiological load, and weaker connection with others.",
+      "confusedWith": {
+        "id": "cognitive-reappraisal",
+        "note": "Suppression mutes the display while the feeling runs on. Reappraisal changes the feeling itself. A calm face is not a calm system."
+      },
+      "tryToday": "Notice one moment where you flatten your face today. You may still choose it, sometimes wisely, but know the feeling stays and bills you later.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Expressive_suppression"
+        }
+      ],
+      "related": [
+        "cognitive-reappraisal",
+        "affect-labeling"
+      ]
+    },
+    {
+      "id": "mood-vs-emotion",
+      "term": "Mood vs. Emotion",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Dynamics & Skills"
+      ],
+      "scenario": "You have been irritable since noon and just caught yourself blaming your partner's texting style. But nothing they wrote today is different from yesterday.",
+      "definition": "A mood is an affective state that, compared to an emotion, is less specific, less intense, and less tied to a particular trigger. It runs in the background and quietly colors what you notice; mistaking one for an emotion invents causes that are not there.",
+      "tryToday": "When irritation lacks a suspect, check the mood basics first: sleep, food, movement, daylight. Interrogate the day before interrogating the people in it.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mood_(psychology)"
+        }
+      ],
+      "related": [
+        "emotional-granularity",
+        "secondary-emotions"
+      ]
+    },
+    {
+      "id": "secondary-emotions",
+      "term": "Secondary Emotions",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Dynamics & Skills"
+      ],
+      "scenario": "A friend's comment hurt you. By evening you are no longer hurt, you are angry at yourself for being hurt by something so small.",
+      "definition": "Emotions and thoughts about your own emotions, called meta-emotions in research: anger about feeling hurt, worry about feeling anxious. The second layer often weighs more than the first, and it hides the original feeling that actually needs attention.",
+      "confusedWith": {
+        "id": "mixed-emotions",
+        "note": "Mixed emotions are two feelings side by side about the same thing. A secondary emotion stacks on top of another: it is about the first feeling itself."
+      },
+      "tryToday": "Next time a feeling seems tangled, ask: what did I feel first, before this feeling about it? Address the first layer; the second usually dissolves with it.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meta-emotion"
+        }
+      ],
+      "related": [
+        "affect-labeling",
+        "mood-vs-emotion",
+        "shame"
+      ]
+    }
+  ]
+}
