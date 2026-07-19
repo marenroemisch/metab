@@ -1,5 +1,5 @@
 {
-  "$schema-note": "One object per concept. Required: id, term, category, breadcrumb, definition. Optional: scenario, confusedWith, tryToday, links, related. Categories: thinking | feeling | relating | communicating. See TAXONOMY.md for breadcrumb trees and categorization rules.",
+  "$schema-note": "One object per concept. Required: id, term, category, breadcrumb, definition. Optional: scenario (the card front: a lived situation for 'self' categories, a description-without-naming for 'world' categories), origin, opposed, relatedTerms (world categories: origin required, and at least one of opposed/relatedTerms non-empty), confusedWith, tryToday, links, related. opposed/relatedTerms entries: {term, note, id?} where id links another card. 'groups' and 'categories' at the top level define the category manifest: group, display label, front kind (scenario|description), and optional branches (level-2 breadcrumb values usable as settings sub-filters). See TAXONOMY.md.",
   "concepts": [
     {
       "id": "strawman-argument",
@@ -7,13 +7,12 @@
       "category": "communicating",
       "breadcrumb": [
         "Communicating",
-        "Logical Fallacies",
-        "Relevance"
+        "Logical Fallacies"
       ],
       "scenario": "You propose flexible working hours. A colleague responds: 'So you want people to stop showing up to work at all?'",
       "definition": "Misrepresenting someone's position as a weaker or more extreme version, then attacking that version instead of the actual argument.",
       "confusedWith": {
-        "id": "steelman-argument",
+        "id": "steelmanning",
         "note": "The steelman is the deliberate opposite: restating the other position in its strongest form before responding."
       },
       "tryToday": "Next time you disagree, restate the other person's point until they say 'yes, exactly' before you respond.",
@@ -25,7 +24,7 @@
       ],
       "related": [
         "ad-hominem",
-        "steelman-argument"
+        "steelmanning"
       ]
     },
     {
@@ -34,8 +33,7 @@
       "category": "thinking",
       "breadcrumb": [
         "Thinking",
-        "Cognitive Biases",
-        "Belief & Confirmation"
+        "Cognitive Biases & Distortions"
       ],
       "scenario": "You suspect a coworker dislikes you. From that day on, you notice every short reply they send and overlook every friendly one.",
       "definition": "The tendency to search for, interpret, and recall information in a way that confirms what you already believe, while giving less attention to evidence against it.",
@@ -88,8 +86,7 @@
       "category": "thinking",
       "breadcrumb": [
         "Thinking",
-        "Mental Models",
-        "Reframing"
+        "Mental Models"
       ],
       "scenario": "Your team plans a product launch by listing success factors. Someone asks instead: 'What would guarantee this launch fails?' The room fills a whiteboard in five minutes.",
       "definition": "Approaching a problem backwards: instead of asking how to achieve a goal, ask what would prevent or destroy it, then avoid those things. Often the failure modes are clearer than the success factors.",
@@ -148,7 +145,6 @@
       "scenario": "Months after the funeral, you see their favorite biscuits in the supermarket. The song you were humming stops, and your throat closes.",
       "definition": "The response to the loss of something deemed important, above all the death of a person or animal you were bonded to. It reaches beyond feeling into body, thought, and behavior, and it arrives in waves triggered by reminders rather than as a steady state.",
       "confusedWith": {
-        "id": "mourning",
         "note": "Mourning is the outward expression of loss, shaped by culture: the funeral, the rituals, the clothes. Grief is the inner response, and it follows no schedule."
       },
       "tryToday": "If a wave hits, do not rate yourself on how long ago the loss was. Waves are how grief works, not a sign of failing to move on.",
@@ -175,7 +171,6 @@
       "scenario": "Sunday evening. You scroll through your contacts, dozens of names, and cannot find one person just to tell about your day.",
       "definition": "The emotional response to isolation, described by researchers as social pain: a signal that pushes you to seek connection the way hunger pushes you to eat. It follows perceived closeness, which is why it can occur in a crowd or a relationship.",
       "confusedWith": {
-        "id": "solitude",
         "note": "Solitude is chosen aloneness and often restorative. Loneliness is unchosen disconnection and can occur with people all around."
       },
       "tryToday": "If you feel it, name which connection is missing: being known, being needed, or shared experience. They often require different coping strategies.",
@@ -581,7 +576,6 @@
       "scenario": "Twenty minutes into the tutorial, the step that should work does not, and you can no longer tell which of your assumptions is the broken one.",
       "definition": "The state of being bewildered or unclear: what is in front of you no longer fits what you thought you knew. Learning research treats it as the marker of exactly the spot where understanding can grow.",
       "confusedWith": {
-        "id": "overwhelm",
         "note": "Confusion is a model mismatch: this does not fit. Overwhelm is a capacity breach: this is too much at once. Confusion needs rethinking, overwhelm needs reducing."
       },
       "tryToday": "Next time you feel it, resist the urge to escape. Write down the exact sentence or step where it started; that sentence marks the boundary of your current understanding.",
@@ -605,7 +599,7 @@
         "Disgust"
       ],
       "scenario": "Your partner explains, again, why they were late. You hear yourself answer with a small laugh through the nose and one raised corner of the mouth.",
-      "definition": "The act of despising: a settled lack of respect that places someone beneath your standards. In relationship research it is the strongest observed predictor of divorce, because it communicates worthlessness rather than disagreement.",
+      "definition": "The act of despising: a settled attitude that places someone beneath your standards. In relationship research it is the strongest observed predictor of divorce, because it communicates worthlessness rather than disagreement.",
       "confusedWith": {
         "id": "resentment",
         "note": "Resentment says 'you wronged me' and still wants something from the person. Contempt says 'you are lesser' and has stopped wanting."
@@ -761,7 +755,7 @@
       "category": "feeling",
       "breadcrumb": [
         "Feeling",
-        "Emotional Dynamics & Skills"
+        "Emotional Skills"
       ],
       "scenario": "Two colleagues have the same rough day. One says 'I feel awful'. The other says 'I am mostly disappointed, a bit embarrassed, and honestly somewhat relieved'. The second one is already halfway through processing it.",
       "definition": "The ability to differentiate between emotions with precision, labeling experiences with specific words where others say 'good' or 'awful'. Higher granularity is linked to better coping, because precise feelings suggest precise responses.",
@@ -787,7 +781,7 @@
       "category": "feeling",
       "breadcrumb": [
         "Feeling",
-        "Emotional Dynamics & Skills"
+        "Emotional Skills"
       ],
       "scenario": "Mid-argument, you say out loud: 'Okay, I notice I am getting defensive.' The sentence itself takes some pressure out of the room, including in you.",
       "definition": "An emotion regulation strategy described simply as putting feelings into words. Explicitly labeling a state reduces its felt intensity and the body's response to it, the mechanism behind 'name it to tame it'.",
@@ -813,7 +807,7 @@
       "category": "feeling",
       "breadcrumb": [
         "Feeling",
-        "Emotional Dynamics & Skills"
+        "Emotional Skills"
       ],
       "scenario": "Your talk got moved to the small room. First reading: they are sidelining me. Second reading: smaller room, full seats, better discussion. Your pulse follows whichever reading you keep.",
       "definition": "Changing what you feel by changing your interpretation of the situation, before the emotion fully unfolds. One of the best-studied regulation strategies, and consistently more effective than suppressing the feeling once it is there.",
@@ -839,7 +833,7 @@
       "category": "feeling",
       "breadcrumb": [
         "Feeling",
-        "Emotional Dynamics & Skills"
+        "Emotional Skills"
       ],
       "scenario": "The criticism in the meeting stings, but you keep your face perfectly still. Afterwards you cannot recall half of what was said next, and you are exhausted.",
       "definition": "Hiding the outward signs of an emotion while continuing to feel it. It works socially in the moment but is costly: habitual suppression is linked to worse memory of the situation, higher physiological load, and weaker connection with others.",
@@ -865,7 +859,7 @@
       "category": "feeling",
       "breadcrumb": [
         "Feeling",
-        "Emotional Dynamics & Skills"
+        "Emotional Skills"
       ],
       "scenario": "You have been irritable since noon and just caught yourself blaming your partner's texting style. But nothing they wrote today is different from yesterday.",
       "definition": "A mood is an affective state that, compared to an emotion, is less specific, less intense, and less tied to a particular trigger. It runs in the background and quietly colors what you notice; mistaking one for an emotion invents causes that are not there.",
@@ -887,10 +881,10 @@
       "category": "feeling",
       "breadcrumb": [
         "Feeling",
-        "Emotional Dynamics & Skills"
+        "Emotional Skills"
       ],
       "scenario": "A friend's comment hurt you. By evening you are no longer hurt, you are angry at yourself for being hurt by something so small.",
-      "definition": "Emotions and thoughts about your own emotions, called meta-emotions in research: anger about feeling hurt, worry about feeling anxious. The second layer often weighs more than the first, and it hides the original feeling that actually needs attention.",
+      "definition": "Emotions and thoughts about your own emotions, called meta-emotions in research: a heated reaction to feeling hurt, or unease about your own nervousness. The second layer often weighs more than the first, and it hides the original feeling that actually needs attention.",
       "confusedWith": {
         "id": "mixed-emotions",
         "note": "Mixed emotions are two feelings side by side about the same thing. A secondary emotion stacks on top of another: it is about the first feeling itself."
@@ -906,6 +900,1972 @@
         "affect-labeling",
         "mood-vs-emotion",
         "shame"
+      ]
+    },
+    {
+      "id": "stoicism",
+      "term": "Stoicism",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "An entire school of life built on one division: what happens to you is not up to you, but your judgment of it is. It took its name from the painted porch where its founder taught.",
+      "definition": "A Greek and Roman school of philosophy holding that virtue is the highest good and that a good life comes from rational judgment and self-command rather than from circumstance. Passions and anxieties are treated as misguided reactions that disciplined practice can correct.",
+      "origin": "Athens, around 300 BC, founded by Zeno of Citium. Named after the stoa poikile, the painted colonnade where he taught in public.",
+      "opposed": [
+        {
+          "term": "Epicureanism",
+          "note": "The rival Hellenistic school, which sought the good life in tranquility and freedom from disturbance rather than in virtue."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "The Cynics",
+          "note": "The tradition Zeno's ideas grew out of."
+        },
+        {
+          "term": "Seneca, Epictetus, Marcus Aurelius",
+          "note": "Its most read voices, from a slave to an emperor."
+        },
+        {
+          "term": "Cognitive therapy",
+          "note": "Modern cognitive therapies drew on Stoic practice; the CBT tradition behind the Thinking category descends from it."
+        }
+      ],
+      "confusedWith": {
+        "id": "expressive-suppression",
+        "note": "Being 'stoic' in the everyday sense means showing nothing. The school is about judging well, not about hiding what you feel; that is its own concept."
+      },
+      "tryToday": "Take one current worry and split it down the school's line: which part of it is up to you, and which part are you carrying as if it were?",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Stoicism"
+        }
+      ]
+    },
+    {
+      "id": "ship-of-theseus",
+      "term": "Ship of Theseus",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "Over the years you have replaced your bike's wheels, chain, saddle, and finally the frame. A friend asks whether it is still the _same_ bike, and you find you cannot give a clean answer.",
+      "definition": "A thought experiment asking whether an object that has had all of its parts replaced over time remains the same object. The Athenians kept Theseus's ship seaworthy by swapping out rotten planks until philosophers began to argue about whether it was still his ship.",
+      "origin": "Ancient Greece; recorded by Plutarch around 100 AD. Thomas Hobbes sharpened it in the 17th century: if someone rebuilt a second ship from the discarded planks, which one is the original?",
+      "relatedTerms": [
+        {
+          "term": "Personal identity",
+          "note": "The modern application: are you the same person you were ten years ago, and what makes it so?"
+        },
+        {
+          "term": "Grandfather's axe and Trigger's broom",
+          "note": "The same puzzle in folk form: two new heads and three new handles, still the same broom."
+        }
+      ],
+      "confusedWith": {
+        "note": "The sorites paradox also probes gradual change, but it asks when a heap stops being a heap: where a vague boundary falls, not whether identity survives replacement."
+      },
+      "tryToday": "Pick something you call 'the same' (a company, a friendship, yourself) and list which parts have already been swapped out.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ship_of_Theseus"
+        }
+      ]
+    },
+    {
+      "id": "trolley-problem",
+      "term": "Trolley Problem",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "A runaway tram will kill five people unless you divert it onto a track where it kills one. Whether you would pull the lever feels obvious, until someone changes one small detail of the story.",
+      "definition": "A thought experiment in moral philosophy about whether to sacrifice one person to save a larger number, posed in many variations. Judgments turn out to be sensitive to details that seem immaterial to the abstract dilemma, and the problem asks why.",
+      "origin": "Posed by the English philosopher Philippa Foot in 1967; named and turned into a research subject of its own by Judith Jarvis Thomson in 1976.",
+      "relatedTerms": [
+        {
+          "term": "Utilitarianism",
+          "id": "utilitarianism",
+          "note": "The lever-pulling logic: count the lives, choose the larger number."
+        },
+        {
+          "term": "Doctrine of double effect",
+          "note": "The distinction the problem probes: harm you intend versus harm you merely foresee."
+        },
+        {
+          "term": "Moral psychology",
+          "note": "The problem moved from philosophy journals into labs, where the variations map how people actually judge."
+        }
+      ],
+      "tryToday": "Notice one decision today where doing nothing is also a choice. The problem's quiet lesson is that inaction has outcomes too.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Trolley_problem"
+        }
+      ]
+    },
+    {
+      "id": "allegory-of-the-cave",
+      "term": "Allegory of the Cave",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "Prisoners chained in the dark take shadows on a wall for the whole of reality. One is dragged out into daylight, and on his return he cannot convince the others of anything.",
+      "definition": "An allegory by Plato comparing the effect of education, and the lack of it, on our nature. What the senses deliver are shadows, distorted copies of reality; the philosopher is the freed prisoner who painfully learns to see things as they are by reason.",
+      "origin": "Athens, c. 375 BC, in book seven of Plato's Republic, told as a dialogue between Socrates and Plato's brother Glaucon.",
+      "relatedTerms": [
+        {
+          "term": "Theory of Forms",
+          "note": "The doctrine behind the image: what is most real is grasped by thought, not sight."
+        },
+        {
+          "term": "Socrates",
+          "id": "socrates",
+          "note": "The allegory's narrator, in Plato's telling."
+        },
+        {
+          "term": "The Matrix and its relatives",
+          "note": "Film after film retells the cave: a false world, a painful exit, a return nobody believes."
+        }
+      ],
+      "tryToday": "Take one thing you know only from screens and ask what the unfiltered original would look like.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Allegory_of_the_cave"
+        }
+      ]
+    },
+    {
+      "id": "existentialism",
+      "term": "Existentialism",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "Nobody issued you a purpose; you find yourself alive and must choose what you are for. A family of European thinkers built philosophy around this predicament and the dizziness that comes with it.",
+      "definition": "A family of philosophical views exploring the individual's struggle to lead an authentic life despite the apparent absurdity or incomprehensibility of existence. In examining meaning, purpose, and value, it works with concepts such as existential crisis, angst, freedom, and courage.",
+      "origin": "Rooted in 19th-century thinkers such as Kierkegaard, Nietzsche, and Dostoevsky; the word itself arrived in the mid 20th century, when Paris made the movement famous.",
+      "opposed": [
+        {
+          "term": "Systematic, rationalist philosophy",
+          "note": "Existentialists held that traditional academic systems were too abstract and removed from concrete human experience."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Friedrich Nietzsche",
+          "id": "friedrich-nietzsche",
+          "note": "Claimed as a forerunner, along with Kierkegaard and Dostoevsky."
+        },
+        {
+          "term": "Simone de Beauvoir",
+          "id": "simone-de-beauvoir",
+          "note": "Of the Paris circle around Sartre; her feminism is existentialism applied."
+        },
+        {
+          "term": "Absurdism",
+          "note": "Camus's own branch: the clash between the search for meaning and a universe that offers none."
+        }
+      ],
+      "confusedWith": {
+        "note": "Nihilism concludes that there is no meaning to be had. Existentialism starts from the same place and asks what you will build anyway."
+      },
+      "tryToday": "Catch yourself saying 'I had no choice' today, and rewrite the sentence with the choice in it. That rewrite is the whole method.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Existentialism"
+        }
+      ]
+    },
+    {
+      "id": "utilitarianism",
+      "term": "Utilitarianism",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "A single test for every moral question: which action produces the greatest good for the greatest number? Whether you may harm one person to spare five is exactly the kind of case it was built to answer.",
+      "definition": "A family of ethical theories holding that the right action is the one that maximizes happiness and well-being for the affected individuals. It is a form of consequentialism: only outcomes count in judging right and wrong, and everyone's interests count equally.",
+      "origin": "England, late 18th century, founded by Jeremy Bentham and continued by John Stuart Mill; older seeds reach back to Epicurus and the Chinese philosopher Mozi.",
+      "opposed": [
+        {
+          "term": "Kantian ethics",
+          "id": "immanuel-kant",
+          "note": "Duty-based ethics in Kant's tradition judges an act by the rule it follows, not by its outcomes."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Consequentialism",
+          "note": "The broader family it belongs to: consequences are the only standard of right and wrong."
+        },
+        {
+          "term": "Trolley Problem",
+          "id": "trolley-problem",
+          "note": "The thought experiment where its arithmetic meets its critics."
+        }
+      ],
+      "tryToday": "Run one real decision today through the count: who is affected, and which option carries the most good? Then notice what the count leaves out.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Utilitarianism"
+        }
+      ]
+    },
+    {
+      "id": "socrates",
+      "term": "Socrates",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "He wrote nothing down and claimed his only wisdom was knowing that he knew nothing. His city found the questioning so unbearable that it put him on trial.",
+      "definition": "An Athenian philosopher regarded as a founder of Western moral philosophy, known entirely through the accounts of his students rather than his own writing. His method examined ideas through short questions and answers until people found they could not define what they thought they understood.",
+      "origin": "Athens, c. 470 to 399 BC. Sentenced to death by poison after a one-day trial for impiety and corrupting the youth.",
+      "opposed": [
+        {
+          "term": "The Sophists",
+          "note": "Paid teachers of rhetoric in the same city; Socratic questioning aimed at truth rather than at winning the argument."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Plato and Xenophon",
+          "note": "The students whose accounts preserve him; Plato largely founded Western philosophy on him."
+        },
+        {
+          "term": "Socratic method",
+          "note": "His namesake, still the backbone of law teaching and of therapeutic questioning."
+        },
+        {
+          "term": "Stoicism",
+          "id": "stoicism",
+          "note": "Descended from him through his disciple Antisthenes and the Cynics."
+        }
+      ],
+      "confusedWith": {
+        "note": "Plato. Most of what 'Socrates said' reaches us as Plato's Socrates, and where the student ends and the teacher begins is itself an open question."
+      },
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Socrates"
+        }
+      ]
+    },
+    {
+      "id": "rene-descartes",
+      "term": "René Descartes",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "Alone with a stove in a winter camp, he resolved to doubt everything that could possibly be doubted, to see what would survive. One thing did: that someone was doing the doubting.",
+      "definition": "A French philosopher, scientist, and mathematician, widely considered a seminal figure of modern philosophy and often called its father. His method began from radical doubt, and its foundation became the most quoted sentence in philosophy: I think, therefore I am.",
+      "origin": "France, 1596 to 1650; wrote his major works in the Dutch Republic and joined geometry to algebra in the coordinate system that carries his name.",
+      "opposed": [
+        {
+          "term": "Scholastic tradition",
+          "note": "The philosophy of inherited authority taught in his day; Descartes insisted on starting from what a single mind can establish for itself."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Mind-body problem",
+          "note": "His split between thinking substance and physical substance still frames the debate."
+        },
+        {
+          "term": "Cartesian coordinates",
+          "note": "The x and y axes of every graph are his."
+        },
+        {
+          "term": "Immanuel Kant",
+          "id": "immanuel-kant",
+          "note": "A later landmark in the same project: securing knowledge against doubt."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes"
+        }
+      ]
+    },
+    {
+      "id": "immanuel-kant",
+      "term": "Immanuel Kant",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "He rarely left his home town, and legend says neighbors set their clocks by his afternoon walk. From that unmoving life came the idea that the mind does not copy the world; it shapes it.",
+      "definition": "A German philosopher of the Enlightenment, one of the most influential figures in modern Western philosophy. He argued that space and time are forms the mind brings to experience, so we know appearances rather than things in themselves; his ethics judges an act by whether its rule could hold for everyone.",
+      "origin": "Königsberg, Prussia, 1724 to 1804; he spent his whole life there and published the Critique of Pure Reason in 1781.",
+      "opposed": [
+        {
+          "term": "Skepticism",
+          "note": "The doubt that knowledge is possible at all; Kant built his system to secure knowledge and morality against it."
+        },
+        {
+          "term": "Utilitarianism",
+          "id": "utilitarianism",
+          "note": "Judges acts by their outcomes; Kant's ethics judges them by the rule they follow."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "The Enlightenment",
+          "note": "He gave the era its motto: dare to know."
+        },
+        {
+          "term": "Categorical imperative",
+          "note": "His universal test: act only on a rule you could will everyone to follow."
+        },
+        {
+          "term": "German idealism",
+          "note": "The philosophical wave that rose directly from his work."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Immanuel_Kant"
+        }
+      ]
+    },
+    {
+      "id": "friedrich-nietzsche",
+      "term": "Friedrich Nietzsche",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "He announced that God is dead, meaning that Europe no longer believed its own values, and asked what could be built in the ruins. He wrote in aphorisms and hammer blows until his health took the pen away.",
+      "definition": "A German philosopher and writer who began as a classical philologist. His work critiques the idea of objective truth in favor of perspectivism, traces Christian morality to a master and slave morality, and answers the crisis of nihilism with an affirmation of life.",
+      "origin": "Prussia, 1844 to 1900; wrote his core books in a single decade of moving between Switzerland, Italy, and southern France, before a mental collapse in 1889.",
+      "opposed": [
+        {
+          "term": "Christian morality",
+          "note": "The value system he spent his sharpest books dissecting, tracing its origins to resentment rather than revelation."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Schopenhauer and Wagner",
+          "note": "His formative influences, both later renounced."
+        },
+        {
+          "term": "Existentialism",
+          "id": "existentialism",
+          "note": "The school that claimed him as a forerunner."
+        },
+        {
+          "term": "His posthumous reputation",
+          "note": "His sister edited his manuscripts to fit her nationalist ideology; scholars later corrected the record."
+        }
+      ],
+      "confusedWith": {
+        "note": "A nihilist. He described nihilism as the crisis to be overcome, not a conclusion to rest in, though readers still argue about his answer."
+      },
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+        }
+      ]
+    },
+    {
+      "id": "simone-de-beauvoir",
+      "term": "Simone de Beauvoir",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "One is not born, but rather becomes, a woman: her most famous sentence carries a whole philosophy. Paris cafés, a lifelong open partnership with another philosopher, and a book that started a movement.",
+      "definition": "A French existentialist philosopher, writer, and feminist activist. Though she did not call herself a philosopher, her study The Second Sex, a detailed analysis of women's oppression, became a foundational text of contemporary feminism.",
+      "origin": "Paris, 1908 to 1986; published The Second Sex in 1949.",
+      "relatedTerms": [
+        {
+          "term": "Jean-Paul Sartre",
+          "note": "Partner and philosophical interlocutor for fifty years."
+        },
+        {
+          "term": "Existentialism",
+          "id": "existentialism",
+          "note": "Her school; The Second Sex is existentialism applied to the situation of women."
+        },
+        {
+          "term": "Feminist theory",
+          "note": "The field her analysis seeded."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Simone_de_Beauvoir"
+        }
+      ]
+    },
+    {
+      "id": "impressionism",
+      "term": "Impressionism",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "Up close the canvas is loose dabs of paint that barely hold together; at arm's length it is a riverbank at one exact hour of morning light. The name began as an insult in a newspaper review.",
+      "definition": "A 19th-century movement of painters characterized by visible brushstrokes, ordinary subject matter, and the accurate depiction of light in its changing qualities, often painted quickly and outdoors to catch the moment before it moved.",
+      "origin": "Paris, 1870s. A critic mocked Monet's 'Impression, Sunrise' in an 1874 review, and the insult stuck as the movement's name.",
+      "opposed": [
+        {
+          "term": "Academic painting",
+          "note": "The official standard of the day: polished surfaces and historical subjects judged by Salon juries, which rejected these painters until they exhibited on their own."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Realism and the Barbizon School",
+          "note": "What it drew from: ordinary subjects and painting outdoors."
+        },
+        {
+          "term": "Post-Impressionism",
+          "note": "What it fed into, along with Neo-Impressionism and Expressionism."
+        }
+      ],
+      "confusedWith": {
+        "id": "expressionism",
+        "note": "Impressionism paints what the eye receives, light as it lands on things. Expressionism paints what the painter feels, pushed onto the scene."
+      },
+      "tryToday": "Look at the light in your room the way these painters did: not 'wall', but a particular color arriving at a particular hour.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Impressionism"
+        }
+      ]
+    },
+    {
+      "id": "expressionism",
+      "term": "Expressionism",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "The street bends, the sky burns in the wrong colors, and the face is a mask of what it feels. These painters were not showing you the world; they were showing you what it _did_ to them.",
+      "definition": "A modernist movement, initially in poetry and painting, that presents the world from a subjective perspective, distorting it radically for emotional effect. Its artists sought to express the meaning of emotional experience rather than physical reality.",
+      "origin": "Northern Europe, mainly Germany, around the beginning of the 20th century, in groups such as Die Brücke and Der Blaue Reiter.",
+      "opposed": [
+        {
+          "term": "Impressionism",
+          "id": "impressionism",
+          "note": "The optical opposite: recording what the eye receives rather than forcing the inner state onto the scene."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Vincent van Gogh",
+          "id": "vincent-van-gogh",
+          "note": "His bold color and dramatic brushwork helped open the way to it."
+        },
+        {
+          "term": "Die Brücke and Der Blaue Reiter",
+          "note": "The German artist groups at its center."
+        }
+      ],
+      "confusedWith": {
+        "id": "impressionism",
+        "note": "The names invite swapping. Impressionism is the outer light arriving; Expressionism is the inner state erupting."
+      },
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Expressionism"
+        }
+      ]
+    },
+    {
+      "id": "cubism",
+      "term": "Cubism",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "The guitar, the face, the bottle: all shattered into facets and shown from several sides at once, as if you had walked around the subject within a single glance.",
+      "definition": "An early-20th-century avant-garde movement that began in Paris. Subjects are analyzed, broken up, and reassembled in abstract form, depicted from multiple perspectives instead of a single viewpoint; it is considered the most influential art movement of the 20th century.",
+      "origin": "Paris, from about 1907 through the 1920s, pioneered in partnership by Pablo Picasso and Georges Braque, building on the late work of Paul Cézanne.",
+      "opposed": [
+        {
+          "term": "Linear perspective",
+          "note": "Five centuries of painting built on the single fixed viewpoint the Renaissance perfected; Cubism dismantled it."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Paul Cézanne",
+          "note": "The primary influence; his late treatment of form set the stage."
+        },
+        {
+          "term": "Pablo Picasso",
+          "id": "pablo-picasso",
+          "note": "Co-founder, with Georges Braque."
+        },
+        {
+          "term": "Futurism, Dada, De Stijl",
+          "note": "Movements across Europe that developed in response to it; collage entered modern art through Cubism."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cubism"
+        }
+      ]
+    },
+    {
+      "id": "surrealism",
+      "term": "Surrealism",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "A melting clock, a train steaming out of a fireplace, painted with such care that the impossible looks documented. The point was to let the unconscious do the composing.",
+      "definition": "An art and cultural movement developed in Europe after the First World War, in which artists aimed to let the unconscious mind express itself, often in illogical or dreamlike scenes. Its declared goal was to resolve dream and reality into an absolute reality: a super-reality.",
+      "origin": "Paris; officially founded with André Breton's Surrealist Manifesto of 1924. The word itself was coined by Guillaume Apollinaire in 1917.",
+      "relatedTerms": [
+        {
+          "term": "Dada",
+          "note": "The anarchic movement it grew from."
+        },
+        {
+          "term": "The unconscious",
+          "note": "Its conceptual engine, drawn from the psychoanalysis of its day."
+        },
+        {
+          "term": "Frida Kahlo",
+          "id": "frida-kahlo",
+          "note": "Often described as one of them; she disagreed."
+        },
+        {
+          "term": "Dalí and Magritte",
+          "note": "Its most recognized painters."
+        }
+      ],
+      "confusedWith": {
+        "note": "The everyday word 'surreal' means merely strange. The movement meant something stricter: the unconscious given equal standing with waking reality."
+      },
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Surrealism"
+        }
+      ]
+    },
+    {
+      "id": "renaissance",
+      "term": "Renaissance",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "After a thousand years, painters looked back past the cathedrals to Greece and Rome, and forward through a new trick of geometry that made flat walls open into depth.",
+      "definition": "A European period and cultural movement from roughly the 14th to the 17th century, characterized by the rediscovery and revival of the art, literature, and philosophy of classical antiquity. In painting it brought linear perspective and other techniques of rendering a more natural reality.",
+      "origin": "Florence, from the 14th century, spreading through Italy and then across Europe; contemporaries credited the resurgence of classical learning to Petrarch.",
+      "relatedTerms": [
+        {
+          "term": "Humanism",
+          "note": "Its intellectual basis: man is the measure of all things."
+        },
+        {
+          "term": "Leonardo and Michelangelo",
+          "id": "leonardo-da-vinci",
+          "note": "The polymaths who inspired the term 'Renaissance man'."
+        },
+        {
+          "term": "Baroque",
+          "note": "The style that followed it in art."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Renaissance"
+        }
+      ]
+    },
+    {
+      "id": "pop-art",
+      "term": "Pop Art",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "Soup cans, comic strips, and film stars, printed as flatly as the ads they came from, hung where the old masters used to hang. The joke was serious: why should art ignore what everyone actually looks at?",
+      "definition": "An art movement that emerged in Britain and the United States in the mid to late 1950s, bringing imagery from advertising, comic strips, packaging, and consumer goods into painting and sculpture. By elevating the banal and the mass-produced, it blurred the boundary between high and low culture.",
+      "origin": "London and New York, mid-1950s onward; developed by artists such as Richard Hamilton in Britain and brought to prominence by Andy Warhol and Roy Lichtenstein in the United States.",
+      "opposed": [
+        {
+          "term": "Abstract Expressionism",
+          "note": "The dominant style it answered: inward, gestural abstraction, met with cool surfaces from the supermarket."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Dada",
+          "note": "Its precedent in found imagery and the readymade."
+        },
+        {
+          "term": "Postmodern art",
+          "note": "What its collapsing of high and low anticipated."
+        }
+      ],
+      "tryToday": "Pick one piece of packaging you see today and look at it as composition: color, type, repetition. That shift of attention is the whole movement.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pop_art"
+        }
+      ]
+    },
+    {
+      "id": "vincent-van-gogh",
+      "term": "Vincent van Gogh",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "In one decade he made nearly 900 paintings and sold exactly one. The swirling night sky he painted from a hospital room is now among the most recognized images on earth.",
+      "definition": "A Dutch Post-Impressionist painter, among the most influential figures in Western art, whose bold color and dramatic brushwork helped open the way to expressionism. He created about 2,100 artworks in just over a decade, most of them in his last two years.",
+      "origin": "Netherlands, 1853 to 1890. Took up painting only in 1881, worked mainly in France, and died at 37 with one painting sold.",
+      "relatedTerms": [
+        {
+          "term": "Impressionism",
+          "id": "impressionism",
+          "note": "The movement he arrived among in Paris and moved beyond."
+        },
+        {
+          "term": "The Fauves and German Expressionists",
+          "note": "Early-20th-century groups who took his color and line as a starting point."
+        },
+        {
+          "term": "Theo van Gogh",
+          "note": "The brother whose support and letters preserve his thinking."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+        }
+      ]
+    },
+    {
+      "id": "leonardo-da-vinci",
+      "term": "Leonardo da Vinci",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "Fewer than 25 major paintings survive from his hand, yet one of them is the most famous picture on earth. The rest of his mind lives in notebooks: flying machines, anatomy, water, written in mirror script.",
+      "definition": "An Italian polymath of the High Renaissance: painter, draughtsman, engineer, scientist, and architect. His fame began with painting and grew through his notebooks of studies in anatomy, botany, and engineering; he is often credited as the founder of the High Renaissance.",
+      "origin": "Vinci, near Florence, 1452 to 1519; trained under Verrocchio, worked in Florence, Milan, and Rome, and spent his last years in France as guest of the king.",
+      "relatedTerms": [
+        {
+          "term": "Michelangelo",
+          "note": "The younger contemporary whose influence on European art rivals his."
+        },
+        {
+          "term": "Renaissance",
+          "id": "renaissance",
+          "note": "The era whose humanist ideal he came to epitomize."
+        },
+        {
+          "term": "Mona Lisa and The Last Supper",
+          "note": "The world's most famous painting, and the most reproduced religious one."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+        }
+      ]
+    },
+    {
+      "id": "rembrandt",
+      "term": "Rembrandt",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "He painted his own face for forty years, from confident youth to bankrupt old age, in canvases built from warm darkness and a single fall of light.",
+      "definition": "A Dutch Golden Age painter, printmaker, and draughtsman. About three hundred paintings and as many etchings survive, among them The Night Watch and a series of self-portraits that spans his whole working life.",
+      "origin": "Dutch Republic, 1606 to 1669; worked in Leiden and Amsterdam at the height of the Dutch Golden Age.",
+      "relatedTerms": [
+        {
+          "term": "Baroque",
+          "note": "His era's style; his version of it is built on light against dark."
+        },
+        {
+          "term": "Self-portraiture",
+          "note": "The genre his lifelong series practically defined."
+        },
+        {
+          "term": "The Night Watch",
+          "note": "The group portrait that became a national icon of the Netherlands."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rembrandt"
+        }
+      ]
+    },
+    {
+      "id": "pablo-picasso",
+      "term": "Pablo Picasso",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "He could paint like the academy as a teenager, so he spent the next seventy years unlearning it. Two of the century's most argued-about paintings, five figures in a brothel and one bombed town, are his.",
+      "definition": "A Spanish painter, sculptor, printmaker, and ceramicist who spent most of his life in France, one of the most influential artists of the 20th century. He co-founded Cubism, co-invented collage, and moved through more styles than any painter of his era; his Guernica became the century's defining anti-war painting.",
+      "origin": "Málaga, Spain, 1881 to 1973; a career of more than 76 years, most of it in Paris and the south of France.",
+      "relatedTerms": [
+        {
+          "term": "Cubism",
+          "id": "cubism",
+          "note": "The movement he founded together with Georges Braque."
+        },
+        {
+          "term": "Paul Cézanne",
+          "note": "The influence standing behind Cubism's treatment of form."
+        },
+        {
+          "term": "Les Demoiselles d'Avignon and Guernica",
+          "note": "The 1907 painting that broke the rules, and the 1937 one that used the broken rules to mourn."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pablo_Picasso"
+        }
+      ]
+    },
+    {
+      "id": "frida-kahlo",
+      "term": "Frida Kahlo",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "A bus accident at eighteen put her in a body cast, and a mirror was mounted over the bed so she could paint the person she was stuck with. She spent the rest of her life doing exactly that.",
+      "definition": "A Mexican painter known for her portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. In a naive folk style she explored questions of identity, gender, class, and race in Mexican society, mixing realism with fantasy in strongly autobiographical paintings.",
+      "origin": "Coyoacán, Mexico, 1907 to 1954; began painting during the long convalescence after the accident.",
+      "relatedTerms": [
+        {
+          "term": "Surrealism",
+          "id": "surrealism",
+          "note": "The label critics gave her; she said she painted her own reality, not dreams."
+        },
+        {
+          "term": "Diego Rivera",
+          "note": "Her husband, twice, and fellow painter of Mexico."
+        },
+        {
+          "term": "Mexicayotl movement",
+          "note": "The post-revolutionary search for a Mexican identity her work belongs to."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Frida_Kahlo"
+        }
+      ]
+    },
+    {
+      "id": "anger",
+      "term": "Anger",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Anger"
+      ],
+      "scenario": "A driver swerves past the queue you have waited in and takes the exit. Heat rises through your chest, and your hand is on the horn before you decided anything.",
+      "definition": "An intense emotional state responding to a perceived provocation, hurt, or threat. The body backs it with a raised heart rate and stress hormones, readying you to act against what caused it.",
+      "confusedWith": {
+        "id": "frustration",
+        "note": "Frustration builds where something blocks your goal and has no face. Anger points at someone or something that did you wrong."
+      },
+      "tryToday": "When anger rises, finish this sentence before acting: what exactly was violated? The answer names something you value, and protecting the value beats discharging the heat.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Anger"
+        }
+      ],
+      "related": [
+        "frustration",
+        "resentment"
+      ]
+    },
+    {
+      "id": "fear",
+      "term": "Fear",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Fear"
+      ],
+      "scenario": "Footsteps behind you on the empty street speed up when you speed up. Your body has decided to run before you finish thinking it.",
+      "definition": "A response to a perceived danger or threat, present or anticipated. It sets off rapid bodily changes that ready you to flee, fight, or freeze.",
+      "confusedWith": {
+        "id": "anxiety",
+        "note": "Fear has an object in front of it and fades when the danger passes. Anxiety scans a future that cannot yet be confronted or escaped."
+      },
+      "tryToday": "Humans are the animal that fears imagined events. When fear fires today, name whether the danger is in the room or in a forecast; the two deserve different answers.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fear"
+        }
+      ],
+      "related": [
+        "anxiety",
+        "dread"
+      ]
+    },
+    {
+      "id": "sadness",
+      "term": "Sadness",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Sadness"
+      ],
+      "scenario": "The moving boxes are gone and the apartment where so much happened is just a room again. You sit on the floor, quiet, with no urge to do anything at all.",
+      "definition": "An emotional pain that comes with disadvantage, loss, or helplessness. It slows you down, quiets you, and pulls you inward, away from others.",
+      "confusedWith": {
+        "id": "grief",
+        "note": "Grief is loss with a name: someone or something specific is gone. Sadness can settle over you without a single identifiable loss."
+      },
+      "tryToday": "Research gives sadness a function: it reopens beliefs and plans for revision. Instead of only waiting for it to pass, let it revise one assumption about what matters.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sadness"
+        }
+      ],
+      "related": [
+        "grief",
+        "disappointment",
+        "loneliness"
+      ]
+    },
+    {
+      "id": "joy",
+      "term": "Joy",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Joy"
+      ],
+      "scenario": "The song hits, your friends are dancing, and something in you spills over; you catch yourself laughing at nothing in particular.",
+      "definition": "A state of intense delight in what is happening, closely tied to well-being or good fortune. It accompanies the moment itself rather than any verdict on how life is going overall.",
+      "confusedWith": {
+        "id": "contentment",
+        "note": "Contentment is satisfied rest with how things are. Joy is livelier: it surges in the moment and wants to be expressed."
+      },
+      "tryToday": "Joy arrives in seconds, not seasons. Note what triggers a small surge of it today; the trigger list is a map of what to build into ordinary days.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Joy"
+        }
+      ],
+      "related": [
+        "contentment",
+        "relief",
+        "amusement",
+        "awe"
+      ]
+    },
+    {
+      "id": "disgust",
+      "term": "Disgust",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Disgust"
+      ],
+      "scenario": "The milk smells wrong and your face closes before you have decided anything: nose wrinkled, mouth shut, the glass already at arm's length.",
+      "definition": "A response of rejection toward something potentially contaminating or offensive, felt first through taste, smell, or sight. It moves you to expel the trigger or keep your distance from it.",
+      "confusedWith": {
+        "id": "contempt",
+        "note": "Contempt looks down on a person and their standing. Disgust recoils from a thing, a substance, or an act, and wants distance rather than superiority."
+      },
+      "tryToday": "Disgust jumps from spoiled food to people and opinions using the same reflex. When it fires at a person today, check whether anything is actually contaminating or the reflex has left the kitchen.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Disgust"
+        }
+      ],
+      "related": [
+        "contempt"
+      ]
+    },
+    {
+      "id": "surprise",
+      "term": "Surprise",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Surprise"
+      ],
+      "scenario": "You flip the light switch in your own kitchen and thirty people shout your name. For one second your face does everything by itself.",
+      "definition": "A rapid, fleeting state set off by an unexpected event: the gap between what you assumed and what actually happened. It interrupts everything and points attention at the new thing.",
+      "confusedWith": {
+        "id": "confusion",
+        "note": "Surprise is the jolt of the unexpected, over in a moment. Confusion lingers when the new information still refuses to fit."
+      },
+      "tryToday": "Each surprise marks an assumption you did not know you had. When one hits today, name the assumption it just broke; that is where the learning is.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Surprise_(emotion)"
+        }
+      ],
+      "related": [
+        "confusion"
+      ]
+    },
+    {
+      "id": "optimism",
+      "term": "Optimism",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Anticipation"
+      ],
+      "scenario": "The flight is cancelled and the queue at the counter is fraying. You notice you are already assuming the next connection will somehow work out; it rarely occurs to you that it might not.",
+      "definition": "The attitude of expecting events to lead to favorable outcomes. As a general disposition, it reflects a belief that future conditions will generally work out well.",
+      "confusedWith": {
+        "id": "hope",
+        "note": "Hope wants a specific outcome and knows it may not come. Optimism is the standing expectation that outcomes in general will be fine."
+      },
+      "tryToday": "Optimism lives in how you explain setbacks: temporary and specific, or permanent and everywhere. Take today's setback and write the temporary-and-specific version of it.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Optimism"
+        }
+      ],
+      "related": [
+        "hope"
+      ]
+    },
+    {
+      "id": "apathy",
+      "term": "Apathy",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Disgust"
+      ],
+      "scenario": "Your friends argue about the election at dinner and you notice you cannot make yourself care either way. It is not that you disagree; nothing in you moves.",
+      "definition": "A lack of feeling, engagement, or concern; a state of indifference in which little seems worth caring about or pursuing.",
+      "confusedWith": {
+        "id": "boredom",
+        "note": "Boredom wants stimulation and cannot find it. Apathy has stopped wanting; even interesting options fail to pull."
+      },
+      "tryToday": "Apathy often marks a mismatch: no challenge that feels worth your skill. Pick one flat area and raise the difficulty slightly; indifference sometimes lifts the moment the stakes return.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apathy"
+        }
+      ],
+      "related": [
+        "boredom"
+      ]
+    },
+    {
+      "id": "complacency",
+      "term": "Complacency",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Joy"
+      ],
+      "scenario": "Nobody has complained about the backups in years, so you stopped checking them. The message that the server died finds you _entirely_ at peace.",
+      "definition": "A feeling of contented self-satisfaction, especially while unaware of trouble that is approaching.",
+      "confusedWith": {
+        "id": "contentment",
+        "note": "Contentment is satisfaction with eyes open. Complacency is satisfaction that has stopped checking."
+      },
+      "tryToday": "Complacency is invisible from the inside; it feels identical to things going well. Ask about one smooth-running area of your life: when did I last actually look?",
+      "links": [
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/complacency"
+        }
+      ],
+      "related": [
+        "contentment"
+      ]
+    },
+    {
+      "id": "confidence",
+      "term": "Confidence",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Trust"
+      ],
+      "scenario": "Before the presentation your colleague keeps rereading her slides. You close the laptop: you have done this a hundred times, and your body already expects it to go fine.",
+      "definition": "The feeling of trust in the reliability of someone or something, including yourself. Self-confidence is the belief that you can generally accomplish what you set out to do.",
+      "confusedWith": {
+        "id": "pride",
+        "note": "Pride looks back at something achieved and enjoys owning it. Confidence looks forward and expects to be able."
+      },
+      "tryToday": "Confidence changes outcomes by changing attempts; it can be a self-fulfilling prophecy in both directions. Find one thing you avoid because you might fail, and check whether the avoidance is what keeps the belief true.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Confidence"
+        }
+      ],
+      "related": [
+        "pride",
+        "self-efficacy"
+      ]
+    },
+    {
+      "id": "respect",
+      "term": "Respect",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Trust"
+      ],
+      "scenario": "You disagree with your old teacher about nearly everything, yet when she speaks you find yourself sitting straighter and listening to the end.",
+      "definition": "A feeling of esteem toward someone or something considered important or valuable, shown through care and consideration for their needs or standing.",
+      "confusedWith": {
+        "id": "admiration",
+        "note": "Admiration is drawn upward by excellence and wants to praise it. Respect can stand at eye level: it honors worth without needing to be impressed."
+      },
+      "tryToday": "Respect does not require agreement. Name what you respect in the person you disagree with most; arguments held inside respect are the ones that stay useful.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Respect"
+        }
+      ],
+      "related": [
+        "admiration",
+        "gratitude"
+      ]
+    },
+    {
+      "id": "indebtedness",
+      "term": "Indebtedness",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Trust"
+      ],
+      "scenario": "A friend gave up her whole weekend to help you move. Warmth is there, but so is arithmetic: something in you is already planning what you now owe.",
+      "definition": "The state of feeling obligated: owing return for a service or favor received. It carries the pressure of an open account rather than the lightness of a gift.",
+      "confusedWith": {
+        "id": "gratitude",
+        "note": "Gratitude receives a kindness as a gift and turns outward in appreciation. Indebtedness receives it as a debt and turns inward to the ledger."
+      },
+      "tryToday": "When someone helps you today, watch which arrives first: appreciation or the impulse to even the score. Naming the ledger reflex loosens it; some gifts are allowed to stay gifts.",
+      "links": [
+        {
+          "label": "Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/indebted"
+        }
+      ],
+      "related": [
+        "gratitude"
+      ]
+    },
+    {
+      "id": "amusement",
+      "term": "Amusement",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Joy"
+      ],
+      "scenario": "The cat walks into the glass door, sits down, and pretends it meant to. Before any thought arrives, you are laughing.",
+      "definition": "The state of experiencing something humorous or entertaining, typically expressed in smiling and laughter. It arises when one way of seeing a thing flips into another, as at a punchline.",
+      "confusedWith": {
+        "id": "joy",
+        "note": "Joy surges from things going well. Amusement needs an incongruity: something must flip, clash, or land sideways to be funny."
+      },
+      "tryToday": "Amusement is a regulation tool: finding the absurd angle of a stressor changes what your body does with it. Describe today's small annoyance to someone as a comedy scene.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Amusement"
+        }
+      ],
+      "related": [
+        "joy"
+      ]
+    },
+    {
+      "id": "calmness",
+      "term": "Calmness",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Joy"
+      ],
+      "scenario": "The train is cancelled and the platform erupts around you. You notice your breathing is unhurried, and there is room in you to think about the next step.",
+      "definition": "The state of being free from agitation or disturbance; peace of mind. It can occur in relaxation but also in fully alert, aware states.",
+      "confusedWith": {
+        "id": "apathy",
+        "note": "Apathy is the absence of caring. Calmness cares and stays steady: the stakes are felt, the surface is quiet."
+      },
+      "tryToday": "Calmness is a capacity that practice increases, not a temperament you either have or lack. Identify your most reliable route to calm (a walk, a task, a person) and use it once deliberately instead of accidentally.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Calmness"
+        }
+      ],
+      "related": [
+        "contentment"
+      ]
+    },
+    {
+      "id": "interest",
+      "term": "Interest",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotion Families",
+        "Anticipation"
+      ],
+      "scenario": "It is past midnight and you are eleven tabs deep into how canal locks work. Nobody assigned this; you just could not stop following it.",
+      "definition": "A feeling that causes attention to focus on an object, event, or process, and to keep returning there. It is the pull that makes a thing worth exploring for its own sake.",
+      "confusedWith": {
+        "note": "Curiosity is the itch of a specific open question. Interest is broader and quieter: a standing pull toward a subject that outlives any single answer."
+      },
+      "tryToday": "Interests are not chosen, which makes them informative. Write down the last three things that pulled you in uninvited and look for what they share.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Interest_(emotion)"
+        }
+      ],
+      "related": [
+        "awe"
+      ]
+    },
+    {
+      "id": "emotional-intelligence",
+      "term": "Emotional Intelligence",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Skills"
+      ],
+      "scenario": "In the heated meeting, one colleague names the tension in the room, waits, and then asks a question that lets everyone climb down. The temperature drops a degree per sentence.",
+      "definition": "The ability to perceive, understand, use, and manage emotions, your own and other people's. It includes telling feelings apart precisely and adjusting them to fit the situation.",
+      "confusedWith": {
+        "id": "emotional-granularity",
+        "note": "Granularity is the vocabulary: how finely you tell feelings apart. Emotional intelligence is the wider toolkit that also puts those distinctions to use with yourself and others."
+      },
+      "tryToday": "Emotional intelligence has learnable parts; start with its smallest unit. In one conversation today, silently name what the other person seems to feel before responding to what they say.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Emotional_intelligence"
+        }
+      ],
+      "related": [
+        "emotional-granularity",
+        "affect-labeling",
+        "cognitive-reappraisal"
+      ]
+    },
+    {
+      "id": "venting",
+      "term": "Venting",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Skills"
+      ],
+      "scenario": "After the awful call you walk straight to a colleague and let the whole story pour out, loud and one-sided. Ten minutes later you feel lighter; whether anything changed is another question.",
+      "definition": "Expressing strong emotion in order to purge it. The idea descends from catharsis, the purification or cleansing of emotions by expressing them, with renewal as the hoped-for result.",
+      "confusedWith": {
+        "id": "affect-labeling",
+        "note": "Affect labeling names the feeling precisely and turns its volume down. Venting re-runs the feeling at full volume, and the rehearsal can keep it warm instead of releasing it."
+      },
+      "tryToday": "Give venting a container: one telling, one listener, then one sentence about what you want to do next. Expression helps most when it ends somewhere.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Catharsis"
+        }
+      ],
+      "related": [
+        "affect-labeling",
+        "expressive-suppression"
+      ]
+    },
+    {
+      "id": "toxic-positivity",
+      "term": "Toxic Positivity",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Skills"
+      ],
+      "scenario": "You tell a friend the layoffs have you worried. 'Everything happens for a reason!' comes back so fast that you put the worry away, and feel further from her than before you spoke.",
+      "definition": "The dismissal of difficult emotions, in yourself or others, by insisting on a positive frame instead of acknowledging what is felt. The pressure to stay upbeat regardless of circumstance can prevent actual coping.",
+      "confusedWith": {
+        "id": "cognitive-reappraisal",
+        "note": "Reappraisal looks at the situation again until a truer, workable reading appears. Toxic positivity skips the looking and pastes the bright reading on top."
+      },
+      "tryToday": "The alternative to 'stay positive' is one acknowledging sentence before anything hopeful. 'That sounds hard' opens more than 'it could be worse'; try the order swap once today.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Toxic_positivity"
+        }
+      ],
+      "related": [
+        "cognitive-reappraisal",
+        "expressive-suppression"
+      ]
+    },
+    {
+      "id": "mixed-emotions",
+      "term": "Mixed Emotions",
+      "category": "feeling",
+      "breadcrumb": [
+        "Feeling",
+        "Emotional Skills"
+      ],
+      "scenario": "Your daughter's train pulls away toward her new city. Waving, you are proud, hollowed out, excited for her, and sorry for yourself, all inside the same thirty seconds.",
+      "definition": "The state of holding conflicting reactions toward the same thing at the same time. Psychology calls it ambivalence: an attitude whose components pull in opposite directions at once.",
+      "confusedWith": {
+        "id": "secondary-emotions",
+        "note": "Secondary emotions stack in sequence, a feeling about a feeling, like guilt about anger. Mixed emotions run in parallel: two responses to one thing at once."
+      },
+      "tryToday": "When two feelings collide today, resist picking the correct one. Write both down with 'and' between them; accuracy about inner conflict beats forced resolution of it.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ambivalence"
+        }
+      ],
+      "related": [
+        "secondary-emotions"
+      ]
+    },
+    {
+      "id": "rumination",
+      "term": "Rumination",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "Days after the meeting you are still replaying your clumsy sentence: in the shower, at lunch, in bed. Each replay changes nothing except how it feels.",
+      "definition": "Focused, repetitive attention on one's own distress, its causes and consequences, without moving toward action. The passive circling sustains the distress rather than resolving it.",
+      "confusedWith": {
+        "note": "Worry loops forward over what might go wrong. Rumination loops backward and inward over what already hurts."
+      },
+      "tryToday": "Rumination is passive, so its antidote needs moving parts. Convert one loop today into either a concrete next step or a deliberate ten-minute distraction; research backs both over another replay.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rumination_(psychology)"
+        }
+      ],
+      "related": [
+        "regret",
+        "catastrophizing"
+      ]
+    },
+    {
+      "id": "absurdism",
+      "term": "Absurdism",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "The human need for meaning meets a universe that offers none, and this standoff itself becomes the subject. Its emblem is a man condemned to roll a boulder uphill forever, whom we are asked to imagine happy.",
+      "definition": "The philosophical theory that a conflict lies between the human search for meaning and a seemingly meaningless world. Rather than escaping into faith or despair, it examines what it means to live inside the conflict itself.",
+      "origin": "Twentieth century; the position is tied to Albert Camus's essay The Myth of Sisyphus (1942), with earlier roots in Kierkegaard.",
+      "opposed": [
+        {
+          "term": "Existentialism",
+          "id": "existentialism",
+          "note": "The close rival: existentialism answers the meaningless world by creating meaning; absurdism doubts the answer and keeps the tension."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Nihilism",
+          "id": "nihilism",
+          "note": "Shares the diagnosis of no given meaning, but absurdism refuses the conclusion that nothing matters."
+        }
+      ],
+      "confusedWith": {
+        "id": "nihilism",
+        "note": "Nihilism concludes that meaninglessness settles the matter. Absurdism treats the clash between needing meaning and finding none as the start of living, not the end."
+      },
+      "tryToday": "The absurdist move fits any commute: keep doing the thing while admitting the universe never promised it mattered. Notice whether the admission drains the task or, as Camus claimed, frees it.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Absurdism"
+        }
+      ]
+    },
+    {
+      "id": "nihilism",
+      "term": "Nihilism",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "A family of positions holding that the ground under our certainties is bare: no given meaning, no objective morals, perhaps no knowledge at all. Its name is built from the Latin word for nothing.",
+      "definition": "A family of philosophical views arguing that life is meaningless, that moral values are baseless, or that knowledge is impossible. Responses to it range from detachment from worldly concerns to the attempt to create values where none are given.",
+      "origin": "Coined in philosophical debate around 1800 and popularized in 19th-century Russia; Nietzsche made it a central diagnosis of modernity.",
+      "opposed": [
+        {
+          "term": "Existentialism",
+          "id": "existentialism",
+          "note": "Built largely as an answer to it: if no meaning is given, meaning must be made."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Existential nihilism",
+          "note": "The best-known member of the family: life has no inherent purpose."
+        },
+        {
+          "term": "Moral nihilism",
+          "note": "The branch that denies morality any foundation in external reality."
+        }
+      ],
+      "confusedWith": {
+        "id": "absurdism",
+        "note": "Absurdism keeps demanding meaning while finding none and stays in that tension. Nihilism holds that the search itself rests on nothing."
+      },
+      "tryToday": "When 'nothing matters' shows up in your own head, sort it: a philosophical claim about the world, or apathy wearing one as a costume? The first can be argued with; the second is a state, and states pass.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nihilism"
+        }
+      ]
+    },
+    {
+      "id": "epicureanism",
+      "term": "Epicureanism",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "A Greek school that declared pleasure the goal of life, then defined pleasure as the absence of pain and fear, reached through simple living among friends. Its founder taught in a garden, not on a porch.",
+      "definition": "A school of philosophy declaring pleasure the sole intrinsic good, and defining the highest pleasure as tranquility: freedom from fear and absence of bodily pain, reached through knowledge of the world, modest desires, and withdrawal from ambition.",
+      "origin": "Founded in Athens in 307 BC by Epicurus, who taught in his garden; it built on the atomism of Democritus.",
+      "opposed": [
+        {
+          "term": "Stoicism",
+          "id": "stoicism",
+          "note": "Its main later opponent among the Hellenistic schools: virtue and self-command as the good life, against tranquility through managed desire."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Hedonism",
+          "note": "Technically its family, yet the school's calculated, modest pleasures are nearly the opposite of the word's everyday sense."
+        },
+        {
+          "term": "Lucretius",
+          "note": "His poem On the Nature of Things carried the school's physics and ethics to Rome."
+        }
+      ],
+      "confusedWith": {
+        "note": "'Epicurean' on a menu means gourmet indulgence. The school taught bread, cheese, friendship, and the absence of fear; the luxury sense is a historical distortion that stuck."
+      },
+      "tryToday": "Epicurus sorted desires into natural and necessary, natural but unnecessary, and empty. Run today's wants through the three bins and notice which bin the anxious ones share.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Epicureanism"
+        }
+      ]
+    },
+    {
+      "id": "determinism",
+      "term": "Determinism",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Ideas"
+      ],
+      "scenario": "Rewind the universe to this morning and press play again: could anything have gone differently? One metaphysical view answers no, every event included, your choices among them.",
+      "definition": "The metaphysical view that all events can occur in only one possible way, each fixed by what came before. It is standardly contrasted with free will, though compatibilists argue the two can coexist.",
+      "origin": "Ancient roots in Greek atomism and Stoic physics; the modern debate sharpened around Laplace's 1814 image of a perfect predictor who could compute the whole future.",
+      "opposed": [
+        {
+          "term": "Indeterminism",
+          "note": "The named antonym: some events are not deterministically caused."
+        },
+        {
+          "term": "Libertarian free will",
+          "note": "The position that genuine alternative possibilities exist and we choose among them."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Compatibilism",
+          "note": "The middle path: determinism true, freedom redefined as acting from your own motives."
+        }
+      ],
+      "confusedWith": {
+        "note": "Fatalism says the outcome arrives regardless of what you do. Determinism includes what you do: your deliberation is a cause in the chain, not a bystander."
+      },
+      "tryToday": "Notice how you assign blame today: causes and circumstances for yourself, free choice for everyone else. That asymmetry has its own card in this collection, the actor-observer bias.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Determinism"
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "term": "Plato",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "An Athenian aristocrat who wrote philosophy as dialogues starring his executed teacher, and taught that the visible world is a shadow of perfect, unchanging patterns. The school he founded gave us the word academy.",
+      "definition": "An ancient Greek philosopher, commonly considered the foundational thinker of the Western tradition. He pioneered the written dialogue, founded the Academy in Athens, and his Theory of Forms holds that stable ideal patterns stand behind the changing things we see.",
+      "origin": "Athens, c. 428-348 BC. Student of Socrates, teacher of Aristotle.",
+      "relatedTerms": [
+        {
+          "term": "Socrates",
+          "id": "socrates",
+          "note": "Teacher and main character: most of what we call Socratic reaches us through Plato's pen."
+        },
+        {
+          "term": "Aristotle",
+          "id": "aristotle",
+          "note": "His student and sharpest critic."
+        },
+        {
+          "term": "Allegory of the Cave",
+          "id": "allegory-of-the-cave",
+          "note": "His most famous image; it has a card of its own here."
+        }
+      ],
+      "confusedWith": {
+        "note": "'Platonic' in everyday speech means affection without desire. In his dialogues, love of a person is a first rung toward love of beauty and truth themselves; the everyday sense kept the ladder and dropped the climb."
+      },
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Plato"
+        }
+      ]
+    },
+    {
+      "id": "aristotle",
+      "term": "Aristotle",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "Twenty years in his teacher's academy, tutor to a future world conqueror, then a rival school of his own where lectures were held walking. His surviving notes organized logic, biology, ethics, and poetics for the next two thousand years.",
+      "definition": "An ancient Greek philosopher and polymath whose writings span the natural sciences, politics, ethics, and the arts. Founder of the Peripatetic school at the Lyceum in Athens, he began the tradition that set the groundwork for the development of modern science.",
+      "origin": "Stagira, 384-322 BC. Joined Plato's Academy at about eighteen; tutored Alexander the Great from 343 BC.",
+      "opposed": [
+        {
+          "term": "Plato's Theory of Forms",
+          "note": "His documented break with his teacher: the patterns of things live in the things themselves, not in a separate realm."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Plato",
+          "id": "plato",
+          "note": "Teacher, and lifelong argument partner in absentia."
+        },
+        {
+          "term": "The Golden Mean",
+          "note": "His ethics in one image: each virtue as the middle between two failures."
+        }
+      ],
+      "tryToday": "Aristotle placed every virtue between two vices: courage between cowardice and recklessness. Pick one trait you overdo, name both ends of its scale, and locate yourself.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Aristotle"
+        }
+      ]
+    },
+    {
+      "id": "confucius",
+      "term": "Confucius",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "A minor official from a small Chinese state whose sayings on family, ritual, and rule by virtue were collected by students after his death and shaped a civilization for two and a half millennia. He phrased the Golden Rule as a negative: do not impose what you would not want.",
+      "definition": "A Chinese philosopher of the Spring and Autumn period, traditionally considered the paragon of Chinese sages. His teachings, later called Confucianism, center on personal and governmental morality, harmonious social relationships, and a ruler's duty to lead by virtue.",
+      "origin": "State of Lu, China, c. 551-479 BC. His sayings were compiled in the Analects long after his death.",
+      "opposed": [
+        {
+          "term": "Legalism",
+          "note": "The rival Chinese school that won the Qin dynasty: order through law and punishment rather than cultivated virtue."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "The Analects",
+          "note": "The compiled aphorisms through which his voice survives."
+        },
+        {
+          "term": "Respect",
+          "id": "respect",
+          "note": "The feeling his whole ethics organizes; its card sits in the Feeling category."
+        }
+      ],
+      "confusedWith": {
+        "note": "Fortune-cookie 'Confucius says' wisdom is a Western invention. The Analects are terse, situational, and mostly about conduct, not cosmic pronouncements."
+      },
+      "tryToday": "His Silver Rule runs on restraint: do not do to others what you do not want done to yourself. Apply it for one day to small things only: interruptions, unsolicited advice, reply-all.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Confucius"
+        }
+      ]
+    },
+    {
+      "id": "marcus-aurelius",
+      "term": "Marcus Aurelius",
+      "category": "philosophy",
+      "breadcrumb": [
+        "Philosophy",
+        "Philosophers"
+      ],
+      "scenario": "The most powerful man of his world spent nights on military campaign writing private notes on staying decent, patient, and unafraid of death. The notes were never meant for readers, and became one of philosophy's most read books.",
+      "definition": "Roman emperor from 161 to 180 and a Stoic philosopher, the last of the rulers known as the Five Good Emperors. His private notebook, the Meditations, is a central source for the modern understanding of Stoic practice.",
+      "origin": "Rome, 121-180 AD. The Meditations were written in Greek during his campaigns on the Danube frontier.",
+      "relatedTerms": [
+        {
+          "term": "Stoicism",
+          "id": "stoicism",
+          "note": "The school he practiced under pressure rather than taught from a porch."
+        },
+        {
+          "term": "Epictetus",
+          "note": "The former slave whose lectures shaped the emperor's notebook; the same school ran from slave to ruler."
+        }
+      ],
+      "tryToday": "His format is reusable: before a hard day, write two sentences addressed to yourself and no one else. Private instruction under pressure was the entire practice.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Marcus_Aurelius"
+        }
+      ]
+    },
+    {
+      "id": "baroque",
+      "term": "Baroque",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "Ceilings that open into heaven, marble that seems to move, light staged like theater: a 17th-century style built to overwhelm, encouraged by a church answering its austere critics.",
+      "definition": "A style of architecture, painting, sculpture, and music that flourished from the early 17th century until the 1750s. It used contrast, movement, exuberant detail, deep color, and surprise to achieve a sense of awe, promoted by the Catholic Church against the plainness of Protestant art.",
+      "origin": "Rome, early 17th century, spreading across Italy, France, Spain, and central Europe; by the 1730s it evolved into the lighter Rococo.",
+      "opposed": [
+        {
+          "term": "Protestant austerity",
+          "note": "The simplicity it was recruited to counter: the style is Counter-Reformation persuasion in stone and paint."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Renaissance",
+          "id": "renaissance",
+          "note": "The order and proportion it inherited and set in motion."
+        },
+        {
+          "term": "Caravaggio and Bernini",
+          "note": "Its theatrical light in paint and its moving marble."
+        }
+      ],
+      "confusedWith": {
+        "note": "'Baroque' in everyday speech means overloaded and convoluted. The style's excess was purposeful: engineered to produce awe, not confusion."
+      },
+      "tryToday": "The style aimed at a feeling this collection also carries: awe. Next time a building or film scene overwhelms you, look for the Baroque toolkit doing the work: scale, contrast, staged light.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Baroque"
+        }
+      ]
+    },
+    {
+      "id": "romanticism",
+      "term": "Romanticism",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "Against the engineers of reason and the smoke of new factories, artists elevated storms, ruins, moonlight, and feeling itself. Its calling card is a lone figure gazing over a sea of fog.",
+      "definition": "An artistic and intellectual movement advocating the importance of subjectivity, imagination, and the appreciation of nature, in response to the Enlightenment and the Industrial Revolution. Passion and intuition were held to be essential to understanding the world.",
+      "origin": "Europe, late 18th century, flowering through the first half of the 19th.",
+      "opposed": [
+        {
+          "term": "The Enlightenment",
+          "note": "The named counterweight: reason, order, and progress, answered here with feeling, nature, and the sublime."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Caspar David Friedrich",
+          "note": "Painter of the fog-gazer that became the movement's emblem."
+        },
+        {
+          "term": "Expressionism",
+          "id": "expressionism",
+          "note": "A later heir: inner state over outer accuracy."
+        }
+      ],
+      "confusedWith": {
+        "note": "It is not about romance. 'Romantic' here descends from the medieval romances, tales of quests and wonder, not from love stories."
+      },
+      "tryToday": "Romanticism institutionalized two feelings from this collection: awe before nature and nostalgia for a nobler past. Catch either in yourself this week and you are inside the movement's engine room.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Romanticism"
+        }
+      ]
+    },
+    {
+      "id": "dada",
+      "term": "Dada",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "In a Zurich cabaret in the middle of a world war, artists answered the logic that had produced the trenches with organized nonsense: sound poems, chance collages, a urinal submitted under a false name.",
+      "definition": "An international art movement formed during World War I, first established in Zürich. Rejecting the logic and reason of a culture that had produced the war, it deployed nonsense, chance, and ridicule as protest against nationalism and cultural conformity.",
+      "origin": "Zürich, 1916, at the Cabaret Voltaire; the name, French for hobby-horse, was reportedly found by stabbing a dictionary with a paper knife.",
+      "opposed": [
+        {
+          "term": "Futurism",
+          "note": "The war-embracing avant-garde in whose context and against whose spirit Dada developed."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Surrealism",
+          "id": "surrealism",
+          "note": "Its direct heir: many Dadaists walked over, trading nonsense for the unconscious."
+        },
+        {
+          "term": "Marcel Duchamp",
+          "note": "His readymades put the question of what makes something art permanently on the table."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dada"
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "term": "Bauhaus",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Movements"
+      ],
+      "scenario": "A German school open for just fourteen years set out to unite craft, art, and industrial production. Closed under Nazi pressure, its teachers scattered abroad and took the white, right-angled future with them.",
+      "definition": "A German art school, operational from 1919 to 1933, that combined crafts and fine arts and sought to unify artistic vision with the principles of mass production and an emphasis on function. Its style became one of the defining currents of modern design and architecture.",
+      "origin": "Founded 1919 in Weimar by Walter Gropius; moved to Dessau and Berlin; closed in 1933 under pressure from the Nazi regime.",
+      "opposed": [
+        {
+          "term": "Ornamented academic tradition",
+          "note": "The decorated 19th-century style it stripped away in favor of function."
+        }
+      ],
+      "relatedTerms": [
+        {
+          "term": "Modernism",
+          "note": "The broader current it helped define."
+        },
+        {
+          "term": "Klee, Kandinsky, Gropius",
+          "note": "Faculty and founder: painters and architects teaching under one roof."
+        }
+      ],
+      "confusedWith": {
+        "note": "Bauhaus is a school and its program, not a synonym for everything minimalist. The look descends from a specific idea: art unified with industrial production."
+      },
+      "tryToday": "Run the Bauhaus question over one object on your desk: what here serves the function, and what is decoration? Neither answer is wrong; seeing the split is the education.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bauhaus"
+        }
+      ]
+    },
+    {
+      "id": "michelangelo",
+      "term": "Michelangelo",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "He insisted he was a sculptor even while spending four years under a chapel ceiling, painting the creation of the world. His David and his Pietà were both carved before he turned thirty.",
+      "definition": "An Italian sculptor, painter, architect, and poet of the High Renaissance, mostly active in Rome. His Sistine Chapel frescoes and his marble sculpture shaped Western art; at 71 he became architect of St. Peter's Basilica and designed its dome.",
+      "origin": "Republic of Florence, 1475-1564; from his thirties onward mostly active in Rome.",
+      "relatedTerms": [
+        {
+          "term": "Leonardo da Vinci",
+          "id": "leonardo-da-vinci",
+          "note": "His elder rival; together the archetypes of the Renaissance man."
+        },
+        {
+          "term": "Renaissance",
+          "id": "renaissance",
+          "note": "The movement whose high phase his work defines."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Michelangelo"
+        }
+      ]
+    },
+    {
+      "id": "claude-monet",
+      "term": "Claude Monet",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "He painted the same haystacks, the same cathedral facade, the same pond of water lilies, over and over, because the subject was never the thing. It was the light at that hour.",
+      "definition": "A French painter and founder of Impressionism, its most consistent and prolific practitioner. He painted nature as he perceived it, especially outdoors, returning to the same subjects in series to capture changing light.",
+      "origin": "Paris 1840 - Giverny 1926. The 1874 exhibition of his Impression, Sunrise gave the movement its name.",
+      "relatedTerms": [
+        {
+          "term": "Impressionism",
+          "id": "impressionism",
+          "note": "The movement named, half in mockery, after his painting."
+        },
+        {
+          "term": "Pierre-Auguste Renoir",
+          "note": "Classmate under Gleyre and fellow founder."
+        }
+      ],
+      "confusedWith": {
+        "note": "Monet is not Manet. Édouard Manet, a decade older, painted modern life and scandalized the Salon; Claude Monet painted light and founded Impressionism."
+      },
+      "tryToday": "His series are a perception exercise anyone can run: photograph one ordinary thing at three different hours and compare what the light did. The subject stops being the thing; that is Impressionism from the inside.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Claude_Monet"
+        }
+      ]
+    },
+    {
+      "id": "johannes-vermeer",
+      "term": "Johannes Vermeer",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "Two small rooms in Delft, daylight from a window on the left, a woman reading a letter or pouring milk: from this he made about three dozen paintings, then vanished from art history for two centuries.",
+      "definition": "A Dutch painter of the Golden Age who specialized in domestic interior scenes of middle-class life. Moderately successful in his lifetime and forgotten after it, he was rediscovered in the 19th century; only about 34 paintings are attributed to him today.",
+      "origin": "Delft, 1632-1675; rediscovered through Théophile Thoré-Bürger's essays in the 1860s.",
+      "relatedTerms": [
+        {
+          "term": "Rembrandt",
+          "id": "rembrandt",
+          "note": "The other pole of the Dutch Golden Age: public drama to Vermeer's private quiet."
+        },
+        {
+          "term": "Girl with a Pearl Earring",
+          "note": "The portrait that became his shorthand."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Johannes_Vermeer"
+        }
+      ]
+    },
+    {
+      "id": "andy-warhol",
+      "term": "Andy Warhol",
+      "category": "art",
+      "breadcrumb": [
+        "Art",
+        "Artists"
+      ],
+      "scenario": "A commercial illustrator turned fine artist who silkscreened soup cans and a film star's face until repetition itself was the picture. His studio was called the Factory, and he meant it.",
+      "definition": "An American artist and filmmaker, a leading figure in the Pop art movement. His work explores the relationship between advertising, consumerism, mass media, and celebrity, turning everyday consumer goods and familiar icons into artworks through mechanical reproduction.",
+      "origin": "Pittsburgh 1928 - New York 1987; the silkscreen paintings that made his name date from 1962.",
+      "relatedTerms": [
+        {
+          "term": "Pop Art",
+          "id": "pop-art",
+          "note": "The movement he fronted."
+        },
+        {
+          "term": "Parasocial relationships",
+          "note": "The one-sided intimacy with media figures that his celebrity portraits anticipated; it has a card in Relating's queue."
+        }
+      ],
+      "tryToday": "He painted the machinery your feeds now run on. When a famous face appears for the tenth time today, notice what the repetition does to your sense of its importance; the Mere-Exposure Effect card explains the mechanism.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Warhol"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "self",
+      "label": "Inner workings"
+    },
+    {
+      "id": "world",
+      "label": "Ideas & culture"
+    }
+  ],
+  "categories": [
+    {
+      "id": "thinking",
+      "label": "Thinking",
+      "group": "self",
+      "front": "scenario"
+    },
+    {
+      "id": "feeling",
+      "label": "Feeling",
+      "group": "self",
+      "front": "scenario"
+    },
+    {
+      "id": "relating",
+      "label": "Relating",
+      "group": "self",
+      "front": "scenario"
+    },
+    {
+      "id": "communicating",
+      "label": "Communicating",
+      "group": "self",
+      "front": "scenario"
+    },
+    {
+      "id": "philosophy",
+      "label": "Philosophy",
+      "group": "world",
+      "front": "description",
+      "branches": [
+        "Ideas",
+        "Philosophers"
+      ]
+    },
+    {
+      "id": "art",
+      "label": "Art",
+      "group": "world",
+      "front": "description",
+      "branches": [
+        "Movements",
+        "Artists"
       ]
     }
   ]
