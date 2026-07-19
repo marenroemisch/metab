@@ -12,8 +12,11 @@ Content style rules for every entry in `data/concepts.json`. These apply to AI-d
 ## Scenarios
 
 5. Second person, 1-2 sentences, Tuesday test (a normal person, a normal day).
+5a. **Skill-card exemption.** Cards in skills branches (Emotional Skills, Constructive Communication) may use up to 4 sentences, because showing a skill often needs a before/after contrast that a felt state does not. The cap is a ceiling, not a target.
 6. **Emphasis device, used sparingly:** wrap the word or phrase that points at the puzzle in underscores (`_something_ in you goes flat`). The card renders it in italics. Use only where a scenario naturally contains such a pivot word. Forcing it on every card wears it out; a handful per batch is the ceiling.
 7. **The scenario must accurately and clearly show the feeling, in 1-2 simple sentences.** Concrete moment beats clever metaphor: "you scroll through dozens of contacts and find no one to call" shows loneliness; "watching everyone through glass" decorates it. If the reader cannot feel the shape of the answer before the reveal, the scenario has failed.
+7a. **Fingerprint rule.** Every scenario must contain at least one distinctive anchor that fits only its concept. A scenario that equally supports three neighboring concepts (overconfidence, Dunning-Kruger, bluffing) has failed even if it is vivid. Mirrors rule 14 for description cards.
+7b. **Plain words, contradiction on the surface.** State the facts of the situation explicitly enough that a non-native reader catches the point on first pass. If the reader must infer what actually happened from a turn of phrase ("the number felt more trustworthy"), the scenario is dressing the point up instead of showing it.
 
 ## Try Today
 
@@ -30,6 +33,15 @@ Content style rules for every entry in `data/concepts.json`. These apply to AI-d
 12. The field is labeled "Often confused with" everywhere: UI, review docs, discussions. The pair must be genuinely confusable in lived experience, not merely adjacent. The note states the distinction in two short contrasting sentences where possible.
 12a. Actively check every entry for a strong candidate before shipping. Missing pairs where a great one exists (grief/mourning, granularity/emotional intelligence) count as gaps.
 
+## Description cards (world categories: Philosophy, Art)
+
+14. **The front describes without naming.** It never contains the term, its obvious cognates, or a giveaway proper noun. Fingerprint rule: at least one distinctive, verifiable anchor that fits only this answer (the painted porch, the one sold painting, the insult that became a name). A front that fits ten answers has failed, exactly as a scenario that fits ten feelings has failed.
+15. **Prefer the lived echo where it exists.** If the idea cashes out in experience (Ship of Theseus, dichotomy of control), a second-person moment is the strongest description-without-naming. Third-person portraits are for entries with no lived moment (persons, most movements). Same card kind, writing choice only.
+16. **Reveal order:** term and breadcrumb, definition, origin, opposed, related, often confused with, try today, links. Definitions remain source-derived (rule 3 verbatim); origin dates and opposition claims are facts and get verified against the linked source at batch time like links. No quality verdicts on ideas, artists, or works (rule 2, extended). Try Today only where the concept yields a non-generic action; common for ideas and movements, rare for persons, better absent than forced.
+
+17. **Bridge rule (should, not must).** Every world card tries to name one link into the self group, in related, often-confused-with, or the definition's second sentence: Stoicism points at cognitive reappraisal, Impressionism at perception. Skip it where it would be forced; a fake bridge is worse than none. This is what keeps the world group tethered to the me-tab thesis.
+
 ## Process
 
 13. Reviewer feedback on any entry becomes a rule here when it generalizes. This file is the memory of those decisions.
+13a. Every batch passes the gates in `QC.md` before it reaches review. Machine-checkable rules live in `validate.js`; run it after any dataset change.

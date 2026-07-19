@@ -1,17 +1,18 @@
-/* Metab: loads the dataset and settings, shows a scenario-first card.
+/* Metab: loads the dataset and settings, shows a front-first card.
+   The card front is a lived scenario for "self" categories and a
+   description-without-naming for "world" categories (philosophy, art);
+   the dataset's "categories" manifest declares which is which via "front".
    Settings (chrome.storage.local, key "metabSettings"):
-     categories: { <category>: boolean }  // a category absent or true is shown; only explicit false hides it
-     frequency:  "tab" | "day"            // new card on every tab (default) or one card per day
+     categories: { <category>: boolean }          // absent or true is shown; only explicit false hides it
+     branches:   { "<category>/<branch>": boolean } // level-2 breadcrumb filters, same convention
+     frequency:  "tab" | "day"                    // new card on every tab (default) or one card per day
+     balance:    "proportional" | "balanced"      // random over all cards, or category first, then card
    Daily pick is remembered under "metabDaily" = { date: "YYYY-MM-DD", id }. */
 
-const CATEGORY_LABELS = {
-  "thinking": "Thinking",
-  "feeling": "Feeling",
-  "relating": "Relating",
-  "communicating": "Communicating"
-};
+const DEFAULT_SETTINGS = { categories: {}, branches: {}, frequency: "tab", balance: "proportional" };
 
-const DEFAULT_SETTINGS = { categories: {}, frequency: "tab" };
+/* Filled from the dataset's categories manifest on init. */
+let categoryMeta = {};
 
 /* Where "Report a problem" sends feedback. To open the extension to people
    without a GitHub account later, replace buildFeedbackUrl's return with a
@@ -65,29 +66,53 @@ function isEnabled(category) {
   return settings.categories[category] !== false;
 }
 
+/* Branch filters only exist for categories whose manifest declares branches
+   (e.g. Philosophy: Ideas / Philosophers). Same absent-or-true convention. */
+function branchEnabled(c) {
+  const meta = categoryMeta[c.category];
+  if (!meta || !meta.branches) return true;
+  const branch = (c.breadcrumb && c.breadcrumb[1]) || "";
+  return settings.branches[c.category + "/" + branch] !== false;
+}
+
 function buildPool() {
-  pool = concepts.filter((c) => isEnabled(c.category));
+  pool = concepts.filter((c) => isEnabled(c.category) && branchEnabled(c));
 }
 
 function pickRandom(excludeId) {
   if (pool.length === 0) return null;
   if (pool.length === 1) return pool[0];
-  let next = pool[Math.floor(Math.random() * pool.length)];
-  while (excludeId && next.id === excludeId) {
-    next = pool[Math.floor(Math.random() * pool.length)];
+
+  let candidates = pool;
+  if (settings.balance === "balanced") {
+    /* Category first (uniform among enabled categories with cards), then card.
+       Keeps a small collection as present as a large one. */
+    const byCat = {};
+    pool.forEach((c) => { (byCat[c.category] = byCat[c.category] || []).push(c); });
+    const cats = Object.keys(byCat);
+    candidates = byCat[cats[Math.floor(Math.random() * cats.length)]];
+    if (candidates.length === 1 && candidates[0].id === excludeId) candidates = pool;
+  }
+
+  let next = candidates[Math.floor(Math.random() * candidates.length)];
+  let guard = 0;
+  while (excludeId && next.id === excludeId && guard++ < 20) {
+    next = candidates[Math.floor(Math.random() * candidates.length)];
   }
   return next;
 }
 
 async function init() {
   const [dataRes, stored] = await Promise.all([
-    fetch(chrome.runtime.getURL("concepts.json")).then((r) => r.json()),
+    fetch(chrome.runtime.getURL("data/concepts.json")).then((r) => r.json()),
     storageGet(["metabSettings", "metabDaily"])
   ]);
 
   concepts = dataRes.concepts;
+  (dataRes.categories || []).forEach((c) => { categoryMeta[c.id] = c; });
   settings = Object.assign({}, DEFAULT_SETTINGS, stored.metabSettings || {});
   settings.categories = settings.categories || {};
+  settings.branches = settings.branches || {};
   buildPool();
 
   document.getElementById("reveal-btn").addEventListener("click", reveal);
@@ -152,8 +177,24 @@ function setEmphasized(el, text) {
   el.innerHTML = escaped.replace(/_([^_]+)_/g, "<em>$1</em>");
 }
 
+/* Category label. On the front (before reveal) it includes the branch as a
+   scoped hint ("Thinking › Mental Models"), never a third level. After reveal
+   it shrinks to the category alone; the full breadcrumb is on the card. */
+function categoryLabel(c, revealed) {
+  const meta = categoryMeta[c.category];
+  const base = (meta && meta.label) || labelFor(c.category);
+  if (revealed) return base;
+  const branch = c.breadcrumb && c.breadcrumb[1];
+  return branch ? base + " › " + branch : base;
+}
+
 function render(c) {
-  document.getElementById("category").textContent = CATEGORY_LABELS[c.category] || labelFor(c.category);
+  const meta = categoryMeta[c.category];
+  document.getElementById("category").textContent = categoryLabel(c, !c.scenario);
+
+  const isDescription = meta && meta.front === "description";
+  document.getElementById("back-btn").innerHTML =
+    "&larr; " + (isDescription ? "Back to the description" : "Back to the situation");
 
   const scenarioView = document.getElementById("scenario-view");
   const conceptView = document.getElementById("concept-view");
@@ -183,6 +224,7 @@ function labelFor(id) {
 
 function reveal() {
   fillConcept(current);
+  document.getElementById("category").textContent = categoryLabel(current, true);
   document.getElementById("scenario-view").hidden = true;
   document.getElementById("concept-view").hidden = false;
   document.getElementById("card-footer").hidden = false;
@@ -190,6 +232,7 @@ function reveal() {
 }
 
 function backToScenario() {
+  document.getElementById("category").textContent = categoryLabel(current, false);
   document.getElementById("concept-view").hidden = true;
   document.getElementById("scenario-view").hidden = false;
   document.getElementById("card-footer").hidden = true;
@@ -210,6 +253,17 @@ function fillConcept(c) {
 
   document.getElementById("term").textContent = c.term;
   document.getElementById("definition").textContent = c.definition;
+
+  const origin = document.getElementById("origin");
+  if (c.origin) {
+    document.getElementById("origin-text").textContent = c.origin;
+    origin.hidden = false;
+  } else {
+    origin.hidden = true;
+  }
+
+  fillTermList("opposed", "opposed-list", c.opposed);
+  fillTermList("related-terms", "related-list", c.relatedTerms);
 
   const confused = document.getElementById("confused");
   if (c.confusedWith && c.confusedWith.note) {
@@ -240,6 +294,26 @@ function fillConcept(c) {
   links.hidden = !(c.links && c.links.length);
 }
 
+/* Renders opposed / relatedTerms entries ({term, note, id?}) as "Term. Note" items. */
+function fillTermList(wrapId, listId, items) {
+  const wrap = document.getElementById(wrapId);
+  const list = document.getElementById(listId);
+  list.textContent = "";
+  if (!items || !items.length) {
+    wrap.hidden = true;
+    return;
+  }
+  items.forEach((item) => {
+    const li = document.createElement("li");
+    const strong = document.createElement("strong");
+    strong.textContent = item.term;
+    li.appendChild(strong);
+    if (item.note) li.appendChild(document.createTextNode(" " + item.note));
+    list.appendChild(li);
+  });
+  wrap.hidden = false;
+}
+
 /* Shown when every category is switched off (or the enabled ones are empty). */
 function renderEmpty() {
   document.getElementById("category").textContent = "";
@@ -251,6 +325,9 @@ function renderEmpty() {
   document.getElementById("term").textContent = "Nothing to show";
   document.getElementById("definition").textContent =
     "Every category is currently switched off. Open settings to turn at least one back on.";
+  document.getElementById("origin").hidden = true;
+  document.getElementById("opposed").hidden = true;
+  document.getElementById("related-terms").hidden = true;
   document.getElementById("confused").hidden = true;
   document.getElementById("try-today").hidden = true;
   document.getElementById("links").hidden = true;

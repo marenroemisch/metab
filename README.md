@@ -30,13 +30,16 @@ manifest.json        Extension manifest (Manifest V3)
 newtab.html          The new tab page
 newtab.css           Styles (light and dark mode)
 newtab.js            Display logic
-data/concepts.json   The content library
-icons/               Extension icons
+options.html/.js     Settings page (categories, daily vs per-tab)
+concepts.json        The content library
 ```
+
+All files sit at the repository root (flat layout), so uploading through the
+GitHub website cannot break the folder structure.
 
 ## Contributing
 
-The content library lives in `data/concepts.json`. One object per concept:
+The content library lives in `concepts.json`. One object per concept:
 
 | Field | Required | Description |
 |---|---|---|

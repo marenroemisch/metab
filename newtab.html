@@ -21,6 +21,18 @@
       <nav class="breadcrumb" id="breadcrumb" aria-label="Category path"></nav>
       <h1 class="term" id="term"></h1>
       <p class="definition" id="definition"></p>
+      <div class="extra-section" id="origin" hidden>
+        <span class="extra-label">Origin</span>
+        <p id="origin-text"></p>
+      </div>
+      <div class="extra-section" id="opposed" hidden>
+        <span class="extra-label">Opposed</span>
+        <ul class="term-list" id="opposed-list"></ul>
+      </div>
+      <div class="extra-section" id="related-terms" hidden>
+        <span class="extra-label">Related</span>
+        <ul class="term-list" id="related-list"></ul>
+      </div>
       <div class="confused" id="confused" hidden>
         <span class="confused-label">Often confused with</span>
         <p id="confused-text"></p>
@@ -33,7 +45,7 @@
     </section>
 
     <footer class="card-footer" id="card-footer" hidden>
-      <button class="ghost-btn" id="back-btn" hidden>&larr; Back to the situation</button>
+      <button class="ghost-btn" id="back-btn" hidden>&larr; Back</button>
       <button class="ghost-btn" id="another-btn">Show another</button>
     </footer>
   </main>
