@@ -10,7 +10,7 @@ const fs = require("fs");
 const path = require("path");
 
 const strict = process.argv.includes("--strict");
-const file = path.join(__dirname, "data", "concepts.json");
+const file = path.join(__dirname, "concepts.json");
 
 const errors = [];
 const warnings = [];
@@ -21,7 +21,7 @@ let data;
 try {
   data = JSON.parse(fs.readFileSync(file, "utf8"));
 } catch (e) {
-  console.error("FATAL: data/concepts.json does not parse: " + e.message);
+  console.error("FATAL: concepts.json does not parse: " + e.message);
   process.exit(1);
 }
 
