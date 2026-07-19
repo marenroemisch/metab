@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Metab link checker. Requests every URL in data/concepts.json and reports
+/* Metab link checker. Requests every URL in concepts.json and reports
    dead or suspicious ones. Intended for CI (GitHub Action) or local runs:
    node check-links.js
    A link passes only if the response is HTTP 200 and the body has real
@@ -9,7 +9,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "concepts.json"), "utf8"));
+const data = JSON.parse(fs.readFileSync(path.join(__dirname, "concepts.json"), "utf8"));
 const urls = new Map(); // url -> [ids]
 for (const c of data.concepts || []) {
   for (const l of c.links || []) {
