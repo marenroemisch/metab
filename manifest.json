@@ -1,9 +1,11 @@
 {
   "manifest_version": 3,
   "name": "Metab",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Learn how your mind works, one new tab at a time. Mental models, biases, emotions, and rhetoric as small daily cards.",
-  "permissions": ["storage"],
+  "permissions": [
+    "storage"
+  ],
   "browser_specific_settings": {
     "gecko": {
       "id": "metab@marenroemisch.github.io",

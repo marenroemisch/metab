@@ -150,7 +150,7 @@ function bindRadios(name, key) {
 
 async function init() {
   const [dataRes, stored] = await Promise.all([
-    fetch(chrome.runtime.getURL("data/concepts.json")).then((r) => r.json()),
+    fetch(chrome.runtime.getURL("concepts.json")).then((r) => r.json()),
     storageGet(["metabSettings"])
   ]);
 

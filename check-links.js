@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Metab link checker. Requests every URL in concepts.json and reports
+/* Metab link checker. Requests every URL in data/concepts.json and reports
    dead or suspicious ones. Intended for CI (GitHub Action) or local runs:
    node check-links.js
    A link passes only if the response is HTTP 200 and the body has real
