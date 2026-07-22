@@ -930,7 +930,7 @@
         },
         {
           "term": "Cognitive therapy",
-          "note": "Modern cognitive therapies drew on Stoic practice; the CBT tradition behind the Thinking category descends from it."
+          "note": "Modern cognitive therapies, including CBT, drew directly on Stoic practice."
         }
       ],
       "confusedWith": {
@@ -2174,13 +2174,13 @@
         "Feeling",
         "Emotional Skills"
       ],
-      "scenario": "You tell a friend the layoffs have you worried. 'Everything happens for a reason!' comes back so fast that you put the worry away, and feel further from her than before you spoke.",
+      "scenario": "You tell a friend the layoffs have you worried. 'Everything happens for a reason!' she says right away, so you drop the subject, feeling more distant from her than before you spoke.",
       "definition": "The dismissal of difficult emotions, in yourself or others, by insisting on a positive frame instead of acknowledging what is felt. The pressure to stay upbeat regardless of circumstance can prevent actual coping.",
       "confusedWith": {
         "id": "cognitive-reappraisal",
         "note": "Reappraisal looks at the situation again until a truer, workable reading appears. Toxic positivity skips the looking and pastes the bright reading on top."
       },
-      "tryToday": "The alternative to 'stay positive' is one acknowledging sentence before anything hopeful. 'That sounds hard' opens more than 'it could be worse'; try the order swap once today.",
+      "tryToday": "Think back to the last time someone shared a problem with you. Did you reach for the bright side, and did that come from their need or from your own discomfort? Next time, try one honest sentence that names the difficulty before you offer any hope.",
       "links": [
         {
           "label": "Wikipedia",
@@ -2388,7 +2388,7 @@
       "confusedWith": {
         "note": "Fatalism says the outcome arrives regardless of what you do. Determinism includes what you do: your deliberation is a cause in the chain, not a bystander."
       },
-      "tryToday": "Notice how you assign blame today: causes and circumstances for yourself, free choice for everyone else. That asymmetry has its own card in this collection, the actor-observer bias.",
+      "tryToday": "Notice how you assign blame today: causes and circumstances for yourself, free choice for everyone else. That asymmetry even has a name, the actor-observer bias.",
       "links": [
         {
           "label": "Wikipedia",
@@ -2406,7 +2406,7 @@
       ],
       "scenario": "An Athenian aristocrat who wrote philosophy as dialogues starring his executed teacher, and taught that the visible world is a shadow of perfect, unchanging patterns. The school he founded gave us the word academy.",
       "definition": "An ancient Greek philosopher, commonly considered the foundational thinker of the Western tradition. He pioneered the written dialogue, founded the Academy in Athens, and his Theory of Forms holds that stable ideal patterns stand behind the changing things we see.",
-      "origin": "Athens, c. 428-348 BC. Student of Socrates, teacher of Aristotle.",
+      "origin": "Athens, c. 428 to 348 BC. Student of Socrates, teacher of Aristotle.",
       "relatedTerms": [
         {
           "term": "Socrates",
@@ -2421,7 +2421,7 @@
         {
           "term": "Allegory of the Cave",
           "id": "allegory-of-the-cave",
-          "note": "His most famous image; it has a card of its own here."
+          "note": "His best-known image: prisoners who take shadows on a wall for reality."
         }
       ],
       "confusedWith": {
@@ -2444,7 +2444,7 @@
       ],
       "scenario": "Twenty years in his teacher's academy, tutor to a future world conqueror, then a rival school of his own where lectures were held walking. His surviving notes organized logic, biology, ethics, and poetics for the next two thousand years.",
       "definition": "An ancient Greek philosopher and polymath whose writings span the natural sciences, politics, ethics, and the arts. Founder of the Peripatetic school at the Lyceum in Athens, he began the tradition that set the groundwork for the development of modern science.",
-      "origin": "Stagira, 384-322 BC. Joined Plato's Academy at about eighteen; tutored Alexander the Great from 343 BC.",
+      "origin": "Stagira, 384 to 322 BC. Joined Plato's Academy at about eighteen; tutored Alexander the Great from 343 BC.",
       "opposed": [
         {
           "term": "Plato's Theory of Forms",
@@ -2478,9 +2478,9 @@
         "Philosophy",
         "Philosophers"
       ],
-      "scenario": "A minor official from a small Chinese state whose sayings on family, ritual, and rule by virtue were collected by students after his death and shaped a civilization for two and a half millennia. He phrased the Golden Rule as a negative: do not impose what you would not want.",
+      "scenario": "A minor official from a small Chinese state taught rulers to lead by virtue, and gave the Golden Rule as a warning: do not impose on others what you would not want yourself. His students collected his sayings after his death, and they shaped a civilization for over two thousand years.",
       "definition": "A Chinese philosopher of the Spring and Autumn period, traditionally considered the paragon of Chinese sages. His teachings, later called Confucianism, center on personal and governmental morality, harmonious social relationships, and a ruler's duty to lead by virtue.",
-      "origin": "State of Lu, China, c. 551-479 BC. His sayings were compiled in the Analects long after his death.",
+      "origin": "State of Lu, China, c. 551 to 479 BC. His sayings were compiled in the Analects long after his death.",
       "opposed": [
         {
           "term": "Legalism",
@@ -2495,13 +2495,13 @@
         {
           "term": "Respect",
           "id": "respect",
-          "note": "The feeling his whole ethics organizes; its card sits in the Feeling category."
+          "note": "The feeling his whole ethics is built to cultivate."
         }
       ],
       "confusedWith": {
         "note": "Fortune-cookie 'Confucius says' wisdom is a Western invention. The Analects are terse, situational, and mostly about conduct, not cosmic pronouncements."
       },
-      "tryToday": "His Silver Rule runs on restraint: do not do to others what you do not want done to yourself. Apply it for one day to small things only: interruptions, unsolicited advice, reply-all.",
+      "tryToday": "Tonight, run the daily self-check one of his students recorded: was I loyal in what I did for others, honest with the people close to me, and did I actually do what I tell others to do?",
       "links": [
         {
           "label": "Wikipedia",
@@ -2519,7 +2519,7 @@
       ],
       "scenario": "The most powerful man of his world spent nights on military campaign writing private notes on staying decent, patient, and unafraid of death. The notes were never meant for readers, and became one of philosophy's most read books.",
       "definition": "Roman emperor from 161 to 180 and a Stoic philosopher, the last of the rulers known as the Five Good Emperors. His private notebook, the Meditations, is a central source for the modern understanding of Stoic practice.",
-      "origin": "Rome, 121-180 AD. The Meditations were written in Greek during his campaigns on the Danube frontier.",
+      "origin": "Rome, 121 to 180 AD. The Meditations were written in Greek during his campaigns on the Danube frontier.",
       "relatedTerms": [
         {
           "term": "Stoicism",
@@ -2570,7 +2570,7 @@
       "confusedWith": {
         "note": "'Baroque' in everyday speech means overloaded and convoluted. The style's excess was purposeful: engineered to produce awe, not confusion."
       },
-      "tryToday": "The style aimed at a feeling this collection also carries: awe. Next time a building or film scene overwhelms you, look for the Baroque toolkit doing the work: scale, contrast, staged light.",
+      "tryToday": "The style was built to produce one feeling above all: awe. Next time a building or film scene overwhelms you, look for the Baroque toolkit doing the work: scale, contrast, staged light.",
       "links": [
         {
           "label": "Wikipedia",
@@ -2586,7 +2586,7 @@
         "Art",
         "Movements"
       ],
-      "scenario": "Against the engineers of reason and the smoke of new factories, artists elevated storms, ruins, moonlight, and feeling itself. Its calling card is a lone figure gazing over a sea of fog.",
+      "scenario": "Against the engineers of reason and the smoke of new factories, artists elevated storms, ruins, moonlight, and feeling itself. Its best-known image is a lone figure gazing over a sea of fog.",
       "definition": "An artistic and intellectual movement advocating the importance of subjectivity, imagination, and the appreciation of nature, in response to the Enlightenment and the Industrial Revolution. Passion and intuition were held to be essential to understanding the world.",
       "origin": "Europe, late 18th century, flowering through the first half of the 19th.",
       "opposed": [
@@ -2609,7 +2609,7 @@
       "confusedWith": {
         "note": "It is not about romance. 'Romantic' here descends from the medieval romances, tales of quests and wonder, not from love stories."
       },
-      "tryToday": "Romanticism institutionalized two feelings from this collection: awe before nature and nostalgia for a nobler past. Catch either in yourself this week and you are inside the movement's engine room.",
+      "tryToday": "Two feelings sit at the heart of the movement: awe before nature and longing for a nobler past. Notice either one in yourself this week, and you are feeling what these artists built their work on.",
       "links": [
         {
           "label": "Wikipedia",
@@ -2660,8 +2660,8 @@
         "Art",
         "Movements"
       ],
-      "scenario": "A German school open for just fourteen years set out to unite craft, art, and industrial production. Closed under Nazi pressure, its teachers scattered abroad and took the white, right-angled future with them.",
-      "definition": "A German art school, operational from 1919 to 1933, that combined crafts and fine arts and sought to unify artistic vision with the principles of mass production and an emphasis on function. Its style became one of the defining currents of modern design and architecture.",
+      "scenario": "A German school open for just fourteen years set out to unite craft, art, and industrial production. Closed under Nazi pressure, its teachers scattered abroad and carried its clean, right-angled style into modern design worldwide.",
+      "definition": "A German art school, operational from 1919 to 1933, that combined crafts and fine arts and sought to unify artistic vision with the principles of mass production and an emphasis on function. Its stripped-down style of clean lines, geometric shapes, and function over ornament became one of the defining looks of modern design and architecture.",
       "origin": "Founded 1919 in Weimar by Walter Gropius; moved to Dessau and Berlin; closed in 1933 under pressure from the Nazi regime.",
       "opposed": [
         {
@@ -2700,7 +2700,7 @@
       ],
       "scenario": "He insisted he was a sculptor even while spending four years under a chapel ceiling, painting the creation of the world. His David and his Pietà were both carved before he turned thirty.",
       "definition": "An Italian sculptor, painter, architect, and poet of the High Renaissance, mostly active in Rome. His Sistine Chapel frescoes and his marble sculpture shaped Western art; at 71 he became architect of St. Peter's Basilica and designed its dome.",
-      "origin": "Republic of Florence, 1475-1564; from his thirties onward mostly active in Rome.",
+      "origin": "Republic of Florence, 1475 to 1564; from his thirties onward mostly active in Rome.",
       "relatedTerms": [
         {
           "term": "Leonardo da Vinci",
@@ -2730,7 +2730,7 @@
       ],
       "scenario": "He painted the same haystacks, the same cathedral facade, the same pond of water lilies, over and over, because the subject was never the thing. It was the light at that hour.",
       "definition": "A French painter and founder of Impressionism, its most consistent and prolific practitioner. He painted nature as he perceived it, especially outdoors, returning to the same subjects in series to capture changing light.",
-      "origin": "Paris 1840 - Giverny 1926. The 1874 exhibition of his Impression, Sunrise gave the movement its name.",
+      "origin": "Paris, 1840 to Giverny, 1926. The 1874 exhibition of his Impression, Sunrise gave the movement its name.",
       "relatedTerms": [
         {
           "term": "Impressionism",
@@ -2763,7 +2763,7 @@
       ],
       "scenario": "Two small rooms in Delft, daylight from a window on the left, a woman reading a letter or pouring milk: from this he made about three dozen paintings, then vanished from art history for two centuries.",
       "definition": "A Dutch painter of the Golden Age who specialized in domestic interior scenes of middle-class life. Moderately successful in his lifetime and forgotten after it, he was rediscovered in the 19th century; only about 34 paintings are attributed to him today.",
-      "origin": "Delft, 1632-1675; rediscovered through Théophile Thoré-Bürger's essays in the 1860s.",
+      "origin": "Delft, 1632 to 1675; rediscovered through Théophile Thoré-Bürger's essays in the 1860s.",
       "relatedTerms": [
         {
           "term": "Rembrandt",
@@ -2792,7 +2792,7 @@
       ],
       "scenario": "A commercial illustrator turned fine artist who silkscreened soup cans and a film star's face until repetition itself was the picture. His studio was called the Factory, and he meant it.",
       "definition": "An American artist and filmmaker, a leading figure in the Pop art movement. His work explores the relationship between advertising, consumerism, mass media, and celebrity, turning everyday consumer goods and familiar icons into artworks through mechanical reproduction.",
-      "origin": "Pittsburgh 1928 - New York 1987; the silkscreen paintings that made his name date from 1962.",
+      "origin": "Pittsburgh, 1928 to New York, 1987; the silkscreen paintings that made his name date from 1962.",
       "relatedTerms": [
         {
           "term": "Pop Art",
@@ -2801,7 +2801,7 @@
         },
         {
           "term": "Parasocial relationships",
-          "note": "The one-sided intimacy with media figures that his celebrity portraits anticipated; it has a card in Relating's queue."
+          "note": "The one-sided intimacy with media figures that his celebrity portraits anticipated."
         }
       ],
       "tryToday": "He painted the machinery your feeds now run on. When a famous face appears for the tenth time today, notice what the repetition does to your sense of its importance; the Mere-Exposure Effect card explains the mechanism.",
@@ -2811,16 +2811,1383 @@
           "url": "https://en.wikipedia.org/wiki/Andy_Warhol"
         }
       ]
+    },
+    {
+      "id": "first-principles",
+      "term": "First Principles",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mental Models"
+      ],
+      "scenario": "The recipe says soak the beans overnight, because every version of the recipe has said so. You ask what the soaking actually does, and find your pressure cooker made the step pointless.",
+      "definition": "A basic assumption that cannot be reduced any further. Thinking from first principles means breaking a problem down to what is certainly true and rebuilding from there, instead of reasoning from how things are usually done.",
+      "tryToday": "Take one routine you follow because it has always been done that way. Ask which assumptions underneath it are actually true, and rebuild the routine from only those.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/First_principle"
+        }
+      ]
+    },
+    {
+      "id": "occams-razor",
+      "term": "Occam's Razor",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mental Models"
+      ],
+      "scenario": "The website is down and your mind builds a story about hacked servers. It turns out the domain renewal simply was not paid.",
+      "definition": "A problem-solving principle: when several explanations fit the facts, prefer the one that needs the fewest assumptions. It is a rule of thumb for where to look first, not a law about what is true.",
+      "confusedWith": {
+        "note": "Occam's razor picks the explanation with the fewest assumptions. Hanlon's razor is its special case for behavior: prefer carelessness over malice as the explanation."
+      },
+      "tryToday": "Next time you catch yourself building an elaborate theory about why something happened, list the assumptions each explanation needs and check the shortest list first.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Occam%27s_razor"
+        }
+      ]
+    },
+    {
+      "id": "premortem",
+      "term": "Premortem",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mental Models"
+      ],
+      "scenario": "Before the project starts, your lead asks everyone to imagine it is a year later and the project failed completely, then to write down what went wrong.",
+      "definition": "A planning technique in which the team imagines the project has already failed and works backward to what led to the failure. Treating the failure as a fact frees people to name threats they would otherwise soften or keep to themselves.",
+      "confusedWith": {
+        "id": "inversion",
+        "note": "Inversion flips a question to reason from the opposite end. A premortem is one specific ritual built on it: assume failure has happened and explain it."
+      },
+      "tryToday": "Before your next commitment, spend two minutes writing the story of how it failed. Threats named in advance are the cheapest ones to fix.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pre-mortem"
+        }
+      ]
+    },
+    {
+      "id": "circle-of-competence",
+      "term": "Circle of Competence",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mental Models"
+      ],
+      "scenario": "A friend asks you about a mortgage clause, and you hear yourself giving a confident answer. Halfway through, you notice the exact sentence where your real knowledge ran out.",
+      "definition": "The area where your knowledge and skill actually match the subject. The concept, from Buffett and Munger, holds that the size of the circle matters far less than knowing exactly where its boundary runs.",
+      "confusedWith": {
+        "id": "dunning-kruger-effect",
+        "note": "The Dunning-Kruger effect is what happens without the boundary: too little knowledge to see what is missing. The circle of competence is the practice of drawing that line deliberately."
+      },
+      "tryToday": "Once today, answer a question with: I don't know enough to say. Naming the edge of your circle is the skill, not a defeat.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Circle_of_competence"
+        }
+      ]
+    },
+    {
+      "id": "anchoring",
+      "term": "Anchoring",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "The first flat you view costs 1,800 a month. Every flat you see afterwards feels like a bargain or a rip-off _compared to that one_.",
+      "definition": "The pull a reference point exerts on your judgment, even when that reference point is irrelevant. Once a first number is on the table, later estimates drift toward it instead of standing on their own.",
+      "tryToday": "Before a negotiation or estimate, write down your own number before hearing anyone else's. The only anchor you can fully counter is one that never lands.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Anchoring_effect"
+        }
+      ]
+    },
+    {
+      "id": "availability-heuristic",
+      "term": "Availability Heuristic",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "After two plane-crash headlines in one week, you catch yourself researching train routes for the holiday, though you drove to work today without a second thought.",
+      "definition": "A mental shortcut that judges how likely or important something is by how easily examples come to mind. Recent, vivid, or often-repeated things feel more common than they are, because recall speed stands in for actual frequency.",
+      "tryToday": "When something feels common, ask where your examples come from. If they are all headlines, you have measured your news feed, not the world.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Availability_heuristic"
+        }
+      ]
+    },
+    {
+      "id": "sunk-cost-fallacy",
+      "term": "Sunk Cost Fallacy",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "The film is terrible at minute 40. You stay for the remaining 80 minutes _because you paid for the ticket_.",
+      "definition": "Letting costs you can no longer recover steer decisions about the future. What is already spent is gone whichever way you decide; the fallacy is spending more, in time or money, to justify it.",
+      "confusedWith": {
+        "id": "loss-aversion",
+        "note": "Loss aversion is the underlying weighting: losses loom larger than gains. The sunk cost fallacy is one of its products: refusing to accept a loss that has already happened."
+      },
+      "tryToday": "Pick one thing you continue mainly because of what it has already cost you. Ask: knowing what I know now, would I start this today? If no, you have your answer.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sunk_cost"
+        }
+      ]
+    },
+    {
+      "id": "loss-aversion",
+      "term": "Loss Aversion",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "Someone offers you a coin flip: heads you win 60, tails you lose 50. You refuse without thinking, and the refusal feels obviously right.",
+      "definition": "The same situation feels worse when framed as a loss than as a gain. Losing 50 stings more than winning 50 pleases, so choices bend toward avoiding losses rather than winning equal gains.",
+      "confusedWith": {
+        "note": "Risk aversion is a preference for certainty over uncertain outcomes and can be entirely rational. Loss aversion is a distortion: identical outcomes weigh differently depending on whether they arrive framed as losses."
+      },
+      "tryToday": "Reframe one decision from what you might lose to what each option gives you in total. If your choice flips, the frame was deciding, not you.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Loss_aversion"
+        }
+      ]
+    },
+    {
+      "id": "dunning-kruger-effect",
+      "term": "Dunning-Kruger Effect",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "Three weeks into learning Spanish, you feel nearly fluent. Three years in, you are amazed at how much you still get wrong.",
+      "definition": "The systematic tendency of people with low ability in an area to overrate that ability, because judging performance requires the same skill they lack. High performers, in mirror image, tend to underrate themselves.",
+      "confusedWith": {
+        "id": "impostor-phenomenon",
+        "note": "The Dunning-Kruger effect overrates ability for lack of the skill to judge it. The impostor phenomenon underrates proven ability despite the evidence. One misjudges the work, the other the self."
+      },
+      "tryToday": "In an area where you feel confident after little practice, ask someone experienced what beginners typically miss. The answer maps the part of the skill you cannot yet see.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
+        }
+      ]
+    },
+    {
+      "id": "hindsight-bias",
+      "term": "Hindsight Bias",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "The deal falls through, and within an hour the whole office agrees the warning signs were obvious. Last week, everyone signed off enthusiastically.",
+      "definition": "The tendency to see past events as more predictable than they were, also called the knew-it-all-along effect. Once the outcome is known, the mind quietly rewrites what you believed beforehand.",
+      "confusedWith": {
+        "note": "Hindsight bias rewrites what you knew before the outcome. Outcome bias judges the quality of a decision by how it happened to turn out."
+      },
+      "tryToday": "Write down your actual prediction before a result arrives: an election, a launch, a match. Your notes will disagree with your memory more often than feels possible.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hindsight_bias"
+        }
+      ]
+    },
+    {
+      "id": "rosy-retrospection",
+      "term": "Rosy Retrospection",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "You remember the camping trip as golden. But your notes from back then mention rain, a broken stove, and a vow never to do this again.",
+      "definition": "Recalling the past more positively than you experienced it at the time. Studies of holidays find the same trip rated mildly disappointing while it happens and fondly afterwards, because irritating details fade faster than the good core.",
+      "confusedWith": {
+        "id": "nostalgia",
+        "note": "Nostalgia is a feeling: a sentimental longing directed at the past. Rosy retrospection is a memory error: the stored record itself has been brightened."
+      },
+      "tryToday": "Before repeating a choice because it was great last time, check something written at the time: messages, photos, a diary. Trust the contemporary record over the remastered memory.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rosy_retrospection"
+        }
+      ]
+    },
+    {
+      "id": "survivorship-bias",
+      "term": "Survivorship Bias",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "Every founder interview says the same thing: they quit their job and bet everything. But nobody interviews the ones who did exactly that and disappeared.",
+      "definition": "Drawing conclusions only from what made it through a selection process, while the failures stay invisible. What survived gets studied; what vanished held the other half of the lesson.",
+      "confusedWith": {
+        "id": "cherry-picking",
+        "note": "Survivorship bias is an unnoticed filter: the failures never reach you. Cherry picking is a chosen one: someone shows you only the cases that fit."
+      },
+      "tryToday": "Next time advice starts with a success story, ask the missing question: how many people did the same and failed? If nobody knows, the advice is untested.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Survivorship_bias"
+        }
+      ]
+    },
+    {
+      "id": "planning-fallacy",
+      "term": "Planning Fallacy",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "You budget one weekend for repainting the hallway, like last time. Last time took three weekends, a fact you remember while buying the paint.",
+      "definition": "Underestimating how long your own task will take, even when you know that similar tasks have overrun before. The past record is fully available; the prediction ignores it and imagines the one smooth version of events.",
+      "confusedWith": {
+        "note": "Optimism bias is the broad tilt toward expecting good outcomes. The planning fallacy is its scheduling department: your own tasks, reliably underestimated, with your track record in plain view."
+      },
+      "tryToday": "For your next estimate, ignore the plan and ask one question: how long did this kind of task actually take last time? Start from that number and adjust only for real differences.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Planning_fallacy"
+        }
+      ]
+    },
+    {
+      "id": "catastrophizing",
+      "term": "Catastrophizing",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "Your boss writes: do you have a minute later? By the time you knock, you have already imagined losing the job, then the flat, then everything else.",
+      "definition": "Giving the worst possible outcome, however unlikely, the heaviest weight, until an uncomfortable situation reads as an unbearable one. The chain from small trigger to disaster is built by thought, not by evidence.",
+      "confusedWith": {
+        "id": "anxiety",
+        "note": "Anxiety is the feeling of a possible future threat. Catastrophizing is a thinking pattern that manufactures such threats, and it can run even on a calm day."
+      },
+      "tryToday": "When the disaster chain starts, write down the feared end state and give it an honest percentage. Numbers are hostile terrain for catastrophes.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cognitive_distortion"
+        }
+      ]
+    },
+    {
+      "id": "all-or-nothing-thinking",
+      "term": "All-or-Nothing Thinking",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "You planned five workouts and managed three. You log the week as a failure and skip the next session, since the streak is ruined anyway.",
+      "definition": "Sorting experience into two absolute categories: success or failure, good or bad, with no middle. Anything short of perfect lands in the failure bin, which is how one missed session can end a whole routine.",
+      "confusedWith": {
+        "id": "overgeneralization",
+        "note": "All-or-nothing thinking has two bins and no scale. Overgeneralization stretches one event across time: this happened once, so it always will."
+      },
+      "tryToday": "Catch one total-failure verdict today and force a percentage on it. Sixty percent done is not zero; only the two-bin system says it is.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cognitive_distortion"
+        }
+      ]
+    },
+    {
+      "id": "overgeneralization",
+      "term": "Overgeneralization",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "Your first application is declined. You close the laptop, thinking there is no point, _it always ends like this_.",
+      "definition": "Drawing a broad, permanent conclusion from a single event: one rejection becomes always, one mistake becomes never. The sample size is one; the verdict covers a lifetime.",
+      "confusedWith": {
+        "id": "all-or-nothing-thinking",
+        "note": "Overgeneralization stretches one event into a permanent pattern. All-or-nothing thinking is the width of the bins: perfect or worthless, nothing between."
+      },
+      "tryToday": "When you hear yourself say always or never, find one counterexample. A single one breaks a never and shrinks the event back to its actual size.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cognitive_distortion"
+        }
+      ]
+    },
+    {
+      "id": "emotional-reasoning",
+      "term": "Emotional Reasoning",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Cognitive Biases & Distortions"
+      ],
+      "scenario": "The presentation went fine and people said so. But it felt clumsy from the inside, so by evening you are telling your partner it was a disaster.",
+      "definition": "Treating a feeling as proof about the world: something is believed true solely because it feels true, even against the evidence. The feeling is real; its verdict about the facts is not.",
+      "confusedWith": {
+        "note": "Intuition is pattern recognition built from experience and is often worth testing. Emotional reasoning skips the test: the feeling itself is admitted as the proof."
+      },
+      "tryToday": "For one strong conviction today, complete the sentence: I believe this because... If nothing follows except a feeling, treat the belief as unverified.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Emotional_reasoning"
+        }
+      ]
+    },
+    {
+      "id": "growth-mindset",
+      "term": "Growth Mindset",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mindsets"
+      ],
+      "scenario": "The rejected manuscript comes back covered in notes. After the first sting, the notes start to read like a to-do list.",
+      "definition": "The belief that abilities can be developed through learning and effort. Under it, feedback and failure read as information about the next step rather than as verdicts on what you are.",
+      "confusedWith": {
+        "id": "fixed-mindset",
+        "note": "A fixed mindset treats ability as a set quantity to be proven; a growth mindset treats it as a capacity to be built. The same feedback lands as verdict or as map."
+      },
+      "tryToday": "Add 'yet' to one 'I can't do this' today. The word is small, but it converts a verdict into a status report.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mindset"
+        }
+      ]
+    },
+    {
+      "id": "fixed-mindset",
+      "term": "Fixed Mindset",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mindsets"
+      ],
+      "scenario": "You decline the harder project, telling yourself you are simply not a numbers person, the way you have since school.",
+      "definition": "The belief that ability is a set quantity that effort cannot much change. Under it, challenges become threats, feedback becomes judgment, and failure feels like exposure rather than practice.",
+      "confusedWith": {
+        "id": "growth-mindset",
+        "note": "Under a fixed mindset a failed attempt is proof of a limit; under a growth mindset it is a data point. The event is the same; the reading differs."
+      },
+      "tryToday": "Find one 'I am not a ... person' label you carry. Ask when you last actually tested it, and what one small test would look like.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mindset"
+        }
+      ]
+    },
+    {
+      "id": "learned-helplessness",
+      "term": "Learned Helplessness",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mindsets"
+      ],
+      "scenario": "After the fourth reorganization cancels your project, a colleague asks why you don't pitch the idea to the new lead. You hear yourself say: why bother.",
+      "definition": "The state of giving up after repeated experiences in which nothing you did changed the outcome, so that you stop trying even when options exist. Newer research suggests the sense of control is the part that is learned, and prolonged strain can unlearn it.",
+      "confusedWith": {
+        "id": "apathy",
+        "note": "Apathy is an absence of caring. Learned helplessness still cares; it has concluded from experience that caring changes nothing."
+      },
+      "tryToday": "Where you have stopped trying, find the smallest thing still in your control and do it once. Control, like helplessness, is learned from evidence.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Learned_helplessness"
+        }
+      ]
+    },
+    {
+      "id": "self-efficacy",
+      "term": "Self-Efficacy",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mindsets"
+      ],
+      "scenario": "The daunting assignment lands on your desk, and you start listing first steps. Your colleague got the same task an hour ago and is still listing reasons it will fail.",
+      "definition": "Your belief in your own capacity to act in the ways needed to reach a specific goal, a concept from Bandura. It shapes which challenges you take on, how long you persist, and how you handle setbacks.",
+      "confusedWith": {
+        "note": "Self-esteem is how much you value yourself overall. Self-efficacy is task-specific: whether you believe you can do this particular thing. Each can be high while the other is low."
+      },
+      "tryToday": "Build it the way research says it grows: through small wins. Pick a task slightly beyond comfortable, finish it, and take note that you did.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Self-efficacy"
+        }
+      ]
+    },
+    {
+      "id": "impostor-phenomenon",
+      "term": "Impostor Phenomenon",
+      "category": "thinking",
+      "breadcrumb": [
+        "Thinking",
+        "Mindsets"
+      ],
+      "scenario": "The promotion letter is real, signed, in your hand. Your first thought is that someone will eventually notice the mistake.",
+      "definition": "The persistent sense of being an intellectual fraud despite clear evidence of your competence, paired with the fear of being found out. Success gets explained away as luck or connections instead of being absorbed as proof.",
+      "confusedWith": {
+        "id": "dunning-kruger-effect",
+        "note": "The impostor phenomenon underrates demonstrated ability; the Dunning-Kruger effect overrates undemonstrated ability. They sit at opposite ends of the same misjudgment."
+      },
+      "tryToday": "Keep one file of finished work and genuine feedback. When the fraud feeling makes its case, open the file and let the record answer.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Impostor_syndrome"
+        }
+      ]
+    },
+    {
+      "id": "cognitive-empathy",
+      "term": "Cognitive Empathy",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "Your colleague says everything is fine. From the pace of their typing and what they are not saying, you work out exactly how the meeting went.",
+      "definition": "The ability to perceive and understand another person's perspective and inner state: working out what someone feels and why, without necessarily feeling it yourself. It is one of the specific capacities the broader term empathy is divided into.",
+      "confusedWith": {
+        "id": "affective-empathy",
+        "note": "Cognitive empathy works out what another person feels; affective empathy feels it with them. One reads, the other resonates. They can occur together or entirely apart."
+      },
+      "tryToday": "In one conversation, check your reading: ask whether what you think they feel is what they actually feel. Accuracy, not effort, is what makes this skill useful.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Empathy"
+        }
+      ]
+    },
+    {
+      "id": "affective-empathy",
+      "term": "Affective Empathy",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "Your friend describes the bad news calmly. You are the one whose eyes fill, and your chest stays heavy for the rest of the day.",
+      "definition": "The capacity to share and respond to another person's experience: their state produces a felt echo in you. It is the feeling half of the broader term empathy, alongside the understanding half.",
+      "confusedWith": {
+        "id": "emotional-contagion",
+        "note": "Emotional contagion catches a feeling automatically and loses track of whose it is. Affective empathy shares the feeling while knowing it is theirs."
+      },
+      "tryToday": "Notice whose feeling you are carrying tonight. Naming it as theirs, shared by you, keeps the care and returns the weight.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Empathy"
+        }
+      ]
+    },
+    {
+      "id": "compassion",
+      "term": "Compassion",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "A stranger drops their shopping in the rain. Before any thought arrives, you are already kneeling on the wet pavement.",
+      "definition": "A social emotion that moves you to go out of your way to relieve the suffering of others or yourself. It is sensitivity to suffering plus the motivation to do something about it.",
+      "confusedWith": {
+        "note": "Pity observes suffering from a safe distance and looks down. Compassion steps toward it as an equal and wants to act."
+      },
+      "tryToday": "Compassion arrives with a to-do list: it wants suffering relieved. Give one of today's compassionate impulses its action instead of letting it remain a feeling.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Compassion"
+        }
+      ]
+    },
+    {
+      "id": "theory-of-mind",
+      "term": "Theory of Mind",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "Planning the surprise party, you casually mention needing Saturday for chores, tracking what your partner knows, what they suspect, and what they must not find out.",
+      "definition": "The capacity to understand other people by ascribing mental states to them: grasping that their beliefs, desires, intentions, and knowledge can differ from your own. Everyday social life runs on it constantly and invisibly.",
+      "confusedWith": {
+        "id": "cognitive-empathy",
+        "note": "Theory of mind is the underlying capacity to model another mind at all. Cognitive empathy is that capacity at work on what someone feels right now."
+      },
+      "tryToday": "Pick one small disagreement and reconstruct what the other person knew when they acted, not what you knew. Many 'irrational' moves dissolve inside the other person's information.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Theory_of_mind"
+        }
+      ]
+    },
+    {
+      "id": "curse-of-knowledge",
+      "term": "Curse of Knowledge",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "You explain the export feature for the third time, baffled that it isn't landing. It is obvious. It has been obvious to you for five years.",
+      "definition": "Once you know something, you can no longer accurately imagine not knowing it, so you assume others share your knowledge. Experts underexplain not from arrogance but because the beginner's mind has become unreachable to them.",
+      "confusedWith": {
+        "id": "hindsight-bias",
+        "note": "Hindsight bias is the curse of knowledge aimed at your own past self: you cannot recall not knowing the outcome. The curse of knowledge misjudges other minds in the present."
+      },
+      "tryToday": "Before explaining anything, recall the tapper study: melodies tapped on a table feel unmistakable to the tapper, yet listeners name them only about two or three percent of the time. Say the obvious part out loud.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Curse_of_knowledge"
+        }
+      ]
+    },
+    {
+      "id": "fundamental-attribution-error",
+      "term": "Fundamental Attribution Error",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "The new colleague misses a deadline and you quietly file them under unreliable. That their laptop died and IT took two days never makes it into the file.",
+      "definition": "When explaining other people's behavior, you overweight their personality and underweight their situation: he is late because he is selfish, not because of the traffic. The error is not that character never matters, but that circumstances rarely get a vote.",
+      "confusedWith": {
+        "id": "actor-observer-bias",
+        "note": "The fundamental attribution error is about explaining others: character over circumstances. Actor-observer bias adds the flip side: for your own behavior, circumstances suddenly count."
+      },
+      "tryToday": "Next character verdict about a stranger, generate one situational explanation that would fully account for the behavior. You rarely know which is true; the point is noticing that you picked.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error"
+        }
+      ]
+    },
+    {
+      "id": "actor-observer-bias",
+      "term": "Actor-Observer Bias",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "You snapped at the intern because it was a brutal week. When a colleague snaps at you, it is because that is who they are.",
+      "definition": "The asymmetry in explanations: your own behavior gets attributed to the situation, the same behavior in others to their personality. Later research qualifies the classic claim, finding the asymmetry mainly in specific conditions such as negative events, not as a universal law.",
+      "confusedWith": {
+        "note": "Actor-observer bias is about who acts, you or them. The self-serving bias is about how it went: successes get claimed as yours, failures get explained away."
+      },
+      "tryToday": "Swap the explanations once: grant the other person your favorite excuse, and ask what their explanation would say about you if it applied.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Actor%E2%80%93observer_asymmetry"
+        }
+      ]
+    },
+    {
+      "id": "halo-effect",
+      "term": "Halo Effect",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "The candidate is charming and well dressed, and by minute ten you have concluded they are also competent, though nothing shown so far relates to the job.",
+      "definition": "The tendency for a positive impression of a person in one area to color your judgment of them in unrelated areas. One appealing trait becomes a glow that the whole person gets read by.",
+      "confusedWith": {
+        "id": "authority-bias",
+        "note": "The halo effect spreads one appealing trait across the whole person. Authority bias borrows credibility from status instead: the title makes the claims sound true."
+      },
+      "tryToday": "When you catch a global verdict about someone new, ask which single observation it actually rests on. Rate one trait at a time; the glow does the rest on its own.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Halo_effect"
+        }
+      ]
+    },
+    {
+      "id": "in-group-bias",
+      "term": "In-Group Bias",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "Two reports land on your desk with the same weak spot. The one from your own team gets the benefit of the doubt.",
+      "definition": "The pattern of favoring members of your own group over outsiders, in judgments, trust, and the sharing of resources. The group can be as deep as family or as arbitrary as a randomly assigned team color.",
+      "confusedWith": {
+        "note": "In-group bias favors your own side. The out-group homogeneity effect flattens the other side: they are all alike, while your group contains individuals."
+      },
+      "tryToday": "Catch one 'we' judgment and test it: would you accept the same argument or excuse from the other team? If not, the group did the judging, not you.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/In-group_favoritism"
+        }
+      ]
+    },
+    {
+      "id": "projection",
+      "term": "Projection",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "You have been quietly thinking about quitting all month. Suddenly the whole team seems disengaged, restless, ready to jump.",
+      "definition": "Attributing your own thoughts, feelings, and traits to another person or group. In its defensive form, what cannot be accepted as yours gets relocated: I hate them becomes they hate me.",
+      "confusedWith": {
+        "id": "mind-reading",
+        "note": "Projection furnishes another mind with your own material. Mind reading claims to read theirs. Both fill in an unknown mind; the source of the fill differs."
+      },
+      "tryToday": "For your next strong judgment about someone (they are angry, jealous, checked out), run the ownership test: is any of this mine right now?",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Psychological_projection"
+        }
+      ]
+    },
+    {
+      "id": "mind-reading",
+      "term": "Mind Reading",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "Your friend answers 'ok.' to a long message. Within minutes you know they are angry with you, and you start drafting a defense.",
+      "definition": "Concluding what someone thinks of you, usually something negative, from thin signals like a glance or a short reply, then acting on it without checking. The evidence is a guess wearing the costume of a fact.",
+      "confusedWith": {
+        "id": "projection",
+        "note": "Mind reading invents what another person thinks about you. Projection assigns them your own traits and feelings. Both fill in another mind; the material differs."
+      },
+      "tryToday": "Take one assumption you carry about what someone thinks of you and test it with a direct question. The hit rate of unchecked mind reading is humbling.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cognitive_distortion"
+        }
+      ]
+    },
+    {
+      "id": "spotlight-effect",
+      "term": "Spotlight Effect",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "You spend the whole meeting certain that everyone keeps looking at the coffee stain on your shirt. Asked afterwards, nobody remembers it.",
+      "definition": "The tendency to believe you are noticed more than you really are. Being permanently at the center of your own world makes it hard to remember that you are at the periphery of everyone else's.",
+      "confusedWith": {
+        "id": "illusion-of-transparency",
+        "note": "The spotlight effect overestimates how much others notice what you do and wear. The illusion of transparency overestimates how much they can read what you feel."
+      },
+      "tryToday": "Try to recall three details of what anyone else wore or did wrong yesterday. The difficulty of the exercise measures the size of everyone else's spotlight on you.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Spotlight_effect"
+        }
+      ]
+    },
+    {
+      "id": "false-consensus-effect",
+      "term": "False Consensus Effect",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "You share an opinion you consider completely mainstream. The pushback is baffling: surely most people think this. Most people do not.",
+      "definition": "Overestimating how widely other people share your beliefs, preferences, and behaviors. Your own choices feel common and appropriate, and those who differ start to look like the odd ones out.",
+      "confusedWith": {
+        "id": "pluralistic-ignorance",
+        "note": "False consensus overestimates agreement with your view. Pluralistic ignorance is the mirror error: most of a group privately agrees, and each member believes they are alone."
+      },
+      "tryToday": "Take one opinion you assume is majority and find an actual number for it. The gap between felt consensus and measured consensus is usually the lesson.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/False_consensus_effect"
+        }
+      ]
+    },
+    {
+      "id": "illusion-of-transparency",
+      "term": "Illusion of Transparency",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Reading People"
+      ],
+      "scenario": "During the presentation your heart hammers so hard you assume the room can hear it. The feedback afterwards: you seemed remarkably calm.",
+      "definition": "Overestimating how visible your inner state is to others. You have full access to your own feelings and adjust too little for the fact that others only see the surface.",
+      "confusedWith": {
+        "id": "spotlight-effect",
+        "note": "The illusion of transparency is about your inner state leaking out. The spotlight effect is about your outer details being watched. Both overrate the audience's attention."
+      },
+      "tryToday": "Before assuming someone must know how you feel, remember that nobody hears your inner soundtrack. If it matters that they know, say it in words.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Illusion_of_transparency"
+        }
+      ]
+    },
+    {
+      "id": "reciprocity",
+      "term": "Reciprocity",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Social Forces"
+      ],
+      "scenario": "A colleague covers your shift without being asked. For weeks afterwards, saying no to their requests feels _physically difficult_.",
+      "definition": "The social norm of answering an action with a similar action: kindness with kindness, favors with favors. It is learned rather than innate, and it quietly steers decisions even when repaying is against your interest.",
+      "confusedWith": {
+        "id": "gratitude",
+        "note": "Gratitude is the warm feeling toward a giver. Reciprocity is the social rule that presses for repayment whether or not warmth is present. Persuaders exploit the rule, not the feeling."
+      },
+      "tryToday": "Notice one moment where a small favor pulls you toward a yes you would not otherwise give. You can honor the kindness without buying the request.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reciprocity_(social_psychology"
+        }
+      ]
+    },
+    {
+      "id": "social-proof",
+      "term": "Social Proof",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Social Forces"
+      ],
+      "scenario": "Two restaurants on the same street. One has a queue, and you join it, reasoning that thirty strangers can't be wrong.",
+      "definition": "Copying the behavior of others to decide how to act, especially when the situation is ambiguous. The working assumption is that the people around you know something you do not.",
+      "confusedWith": {
+        "note": "Social proof follows others because they might know better. Conformity in its normative form follows to be liked and accepted. Same crowd, different motive."
+      },
+      "tryToday": "Once today, ask what the crowd you are following actually knows. A queue is evidence that someone chose first, not that they chose well.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_proof"
+        }
+      ]
+    },
+    {
+      "id": "emotional-contagion",
+      "term": "Emotional Contagion",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Social Forces"
+      ],
+      "scenario": "You walk in relaxed. Ten minutes next to your tense colleague and your own shoulders sit by your ears, though nothing has happened to you.",
+      "definition": "The spontaneous spread of emotions and their expressions from person to person, or through a whole group. It runs largely on automatic mimicry and needs no words or awareness to work.",
+      "confusedWith": {
+        "id": "affective-empathy",
+        "note": "Emotional contagion is automatic catching: the feeling jumps over and presents itself as yours. Affective empathy keeps the label attached: this is their feeling, shared."
+      },
+      "tryToday": "When your mood shifts around a person, ask where it entered. Feelings are catching; knowing you caught one is what stops you acting on it as your own.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Emotional_contagion"
+        }
+      ]
+    },
+    {
+      "id": "mere-exposure-effect",
+      "term": "Mere-Exposure Effect",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Social Forces"
+      ],
+      "scenario": "The song annoyed you in week one. By week four you catch yourself humming it and calling it good.",
+      "definition": "Developing a liking for things and people merely because they are familiar. In studies of attraction, the more often people see a person, the more pleasing and likeable they find them, with no other change involved.",
+      "tryToday": "Distrust one 'I just like it' today: is it good, or has it simply been near you long enough? Familiar and better are different claims.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mere-exposure_effect"
+        }
+      ]
+    },
+    {
+      "id": "pluralistic-ignorance",
+      "term": "Pluralistic Ignorance",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Social Forces"
+      ],
+      "scenario": "The lecturer asks if anyone has questions. You are lost, but every face around you looks untroubled, so your hand stays down. Half the room is doing the same.",
+      "definition": "A situation in which people mistakenly believe that most others hold an opinion different from their own, so many go along with a view they privately reject. The norm survives because everyone assumes everyone else supports it.",
+      "confusedWith": {
+        "id": "false-consensus-effect",
+        "note": "Pluralistic ignorance hides a majority from itself: most agree, each thinks they are alone. The false consensus effect is the mirror error: assuming most people share your view when they do not."
+      },
+      "tryToday": "Say the unglamorous thing once: I don't understand, or I don't actually enjoy this. The relieved agreement that often follows is pluralistic ignorance collapsing.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pluralistic_ignorance"
+        }
+      ]
+    },
+    {
+      "id": "bystander-effect",
+      "term": "Bystander Effect",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Social Forces"
+      ],
+      "scenario": "A man stumbles and falls on the crowded platform. Forty people see it. Everyone waits for someone else to move first.",
+      "definition": "The finding that individuals are less likely to help a person in need when other people are present. Responsibility spreads thin across the crowd, and everyone's calm face convinces everyone else that nothing is wrong.",
+      "confusedWith": {
+        "id": "pluralistic-ignorance",
+        "note": "Pluralistic ignorance is one engine of the bystander effect: each person reads the others' inaction as proof that no help is needed. The bystander effect is the resulting collective standstill."
+      },
+      "tryToday": "If you ever need help in a crowd, pick one person: you, in the blue jacket, call an ambulance. Singling out dissolves the effect, and knowing that is also how you beat it as a bystander.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bystander_effect"
+        }
+      ]
+    },
+    {
+      "id": "parasocial-relationships",
+      "term": "Parasocial Relationships",
+      "category": "relating",
+      "breadcrumb": [
+        "Relating",
+        "Social Forces"
+      ],
+      "scenario": "The podcast host's voice has been in your ears on every commute for two years. When they mention moving on, you feel oddly _left behind_.",
+      "definition": "One-sided psychological relationships that audiences form with media figures, from talk show hosts to streamers, experienced as friendship although the other side does not know you exist. The felt sense of a mutual bond is what separates it from ordinary fandom.",
+      "tryToday": "Count what the relationship gives you, company and comfort, and what it cannot: being known back. Enjoy the first knowingly; seek the second with people who can answer.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Parasocial_interaction"
+        }
+      ]
+    },
+    {
+      "id": "ad-hominem",
+      "term": "Ad Hominem",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies"
+      ],
+      "scenario": "In the residents' meeting, your data on traffic safety is answered with: you don't even own a car.",
+      "definition": "Attacking the character, motive, or another attribute of the person making an argument instead of the argument itself. The attack creates a diversion, often through a charged but irrelevant detail about the opponent.",
+      "confusedWith": {
+        "id": "whataboutism",
+        "note": "An ad hominem attacks the speaker to dodge the argument. Whataboutism dodges by pointing at the accuser's own record: and what about you? Both leave the original point unanswered."
+      },
+      "tryToday": "When you feel the urge to answer a point by describing its author, split the reply: answer the claim first, then decide whether the comment about the person still needs saying. It rarely does.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ad_hominem"
+        }
+      ]
+    },
+    {
+      "id": "red-herring",
+      "term": "Red Herring",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies"
+      ],
+      "scenario": "You ask about the missed deadline. Three minutes later you are somehow discussing the marketing budget, and the deadline is gone.",
+      "definition": "Something that misleads or distracts from the relevant question: a plausible-sounding but irrelevant point that pulls the discussion off its track. It can be deployed deliberately or committed by accident.",
+      "confusedWith": {
+        "id": "strawman-argument",
+        "note": "The strawman distorts your argument and attacks the distortion. The red herring never engages at all: it changes the subject with something plausible and beside the point."
+      },
+      "tryToday": "In your next derailed discussion, use the sentence: that may be true, and it is not the question. Then restate the question.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Red_herring"
+        }
+      ]
+    },
+    {
+      "id": "whataboutism",
+      "term": "Whataboutism",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies"
+      ],
+      "scenario": "You point out the error in the report. The answer arrives instantly: _and what about your numbers last quarter?_",
+      "definition": "Responding to an accusation with a counter-accusation instead of addressing it, combining the you-too move with a change of subject. The original charge is left standing and unanswered.",
+      "confusedWith": {
+        "id": "ad-hominem",
+        "note": "Whataboutism deflects to the accuser's own sins. The ad hominem attacks the accuser's character. Both are exits from the actual question through different doors."
+      },
+      "tryToday": "The counter-accusation may even be fair; it is still a second topic. Answer it once the first question has an answer, not instead of one.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Whataboutism"
+        }
+      ]
+    },
+    {
+      "id": "false-dilemma",
+      "term": "False Dilemma",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies"
+      ],
+      "scenario": "Either we ship on Friday or the whole project dies, says the slide. Nobody asks about the third, fourth, or fifth option.",
+      "definition": "An argument built on a premise that wrongly limits the available options: either this or that, when more alternatives exist. The reasoning that follows can be flawless; the menu is what has been rigged.",
+      "confusedWith": {
+        "id": "all-or-nothing-thinking",
+        "note": "All-or-nothing thinking is the two-bin habit inside one mind. A false dilemma is the two-item menu presented in an argument, often to force a choice."
+      },
+      "tryToday": "When handed an either-or, ask the standard question: what is the third option? There nearly always is one, and asking exposes the frame.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/False_dilemma"
+        }
+      ]
+    },
+    {
+      "id": "slippery-slope",
+      "term": "Slippery Slope",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies"
+      ],
+      "scenario": "If we allow home office on Fridays, next it will be the whole week, and within a year nobody will come in at all, says your manager.",
+      "definition": "Rejecting a step because it will supposedly trigger a chain reaction ending in disaster. The argument is only as strong as the evidence for each link in the chain; without that, the slope is asserted, not shown.",
+      "confusedWith": {
+        "id": "catastrophizing",
+        "note": "Catastrophizing runs the disaster chain privately, inside one head. A slippery slope argument deploys such a chain in debate, to block someone's first step."
+      },
+      "tryToday": "When a slope appears, ask for the middle links: what exactly forces step one to become step five? Chains that cannot name their links are decoration.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Slippery_slope"
+        }
+      ]
+    },
+    {
+      "id": "begging-the-question",
+      "term": "Begging the Question",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies"
+      ],
+      "scenario": "The policy is fair because it treats everyone appropriately, says the memo. Appropriate, it turns out, means whatever the policy does.",
+      "definition": "An argument whose premises already assume the conclusion they claim to prove: the answer is smuggled into the starting point. The reasoning runs in a circle, which is why it convinces no one who did not already agree.",
+      "confusedWith": {
+        "id": "loaded-question",
+        "note": "Begging the question hides the disputed conclusion inside a premise. A loaded question hides it inside a question. Both ask you to swallow the contested part unnoticed."
+      },
+      "tryToday": "Take one 'obviously true' claim you have made recently and check its support: does the reason restate the claim in other words? Circles are easiest to spot in your own arguments.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Begging_the_question"
+        }
+      ]
+    },
+    {
+      "id": "cherry-picking",
+      "term": "Cherry Picking",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies"
+      ],
+      "scenario": "The pitch deck shows three glowing customer quotes. The churn numbers, twenty slides of them, stayed in a drawer.",
+      "definition": "Pointing to the individual cases that confirm a position while ignoring the significant body of cases that contradict it. Every presented fact can be true; the missing ones carry the verdict.",
+      "confusedWith": {
+        "id": "confirmation-bias",
+        "note": "Confirmation bias filters evidence silently inside one head. Cherry picking presents the filtered result to others, intentionally or not."
+      },
+      "tryToday": "For one claim you want to believe, actively hunt the disconfirming cases. If you only ever meet supporting evidence, someone is picking, possibly you.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cherry_picking"
+        }
+      ]
+    },
+    {
+      "id": "equivocation",
+      "term": "Equivocation",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Logical Fallacies"
+      ],
+      "scenario": "Management promised nobody would lose their job. Outsourcing, it later explains, is not losing a job but transitioning one. The word did the work.",
+      "definition": "Using the same word in two different senses within one argument, so the conclusion trades on the unnoticed switch. The reasoning looks valid only because a single word quietly changed meaning between the premise and the conclusion.",
+      "confusedWith": {
+        "note": "Equivocation switches between meanings of a word mid-argument. The motte-and-bailey switches between a bold claim and a defensible one whenever pressure arrives."
+      },
+      "tryToday": "When an argument suddenly feels slippery, define its key term once, out loud, and hold both halves of the argument to that single definition.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Equivocation"
+        }
+      ]
+    },
+    {
+      "id": "framing",
+      "term": "Framing",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "The email announces 'streamlining your benefits'. The attachment shows they got smaller.",
+      "definition": "How a message organizes and presents reality, making some aspects of a situation visible and letting others recede. The same facts inside a different frame produce a different reaction, which makes the choice of frame a quiet form of persuasion.",
+      "confusedWith": {
+        "id": "cognitive-reappraisal",
+        "note": "Framing chooses the lens through which others see the facts. Cognitive reappraisal is choosing a different lens for yourself. The mechanism is shared; the target is not."
+      },
+      "tryToday": "Take one charged headline or announcement and restate its facts in a neutral sentence. Whatever vanished in your translation, that was the frame.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Framing_(social_sciences"
+        }
+      ]
+    },
+    {
+      "id": "loaded-question",
+      "term": "Loaded Question",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "Why is your generation so incapable of commitment, asks your uncle, and any direct answer accepts the premise.",
+      "definition": "A question that contains a controversial assumption, so that any direct answer concedes it. Have you stopped missing deadlines convicts on yes and on no alike.",
+      "confusedWith": {
+        "id": "begging-the-question",
+        "note": "A loaded question hides the disputed claim inside a question. Begging the question hides it inside a premise. The smuggling route differs; the cargo is the same."
+      },
+      "tryToday": "Never answer the surface of a loaded question. Name the assumption instead: your question assumes X, and X is not established. Then offer to discuss X.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Loaded_question"
+        }
+      ]
+    },
+    {
+      "id": "gish-gallop",
+      "term": "Gish Gallop",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "Your opponent makes fourteen claims in ninety seconds. Rebutting the first two costs your entire speaking time, and the other twelve stand unchallenged.",
+      "definition": "Overwhelming an opponent with a rapid flood of arguments, half-truths, and misstatements, more than could possibly be answered in the available time. Each point takes seconds to assert and minutes to refute; the flood wins on volume, not accuracy.",
+      "tryToday": "Against a gallop, refuse the race: pick the weakest claim, dismantle it thoroughly, and name the tactic out loud. An audience that sees the trick discounts the flood.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gish_gallop"
+        }
+      ]
+    },
+    {
+      "id": "weasel-words",
+      "term": "Weasel Words",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "The update says 'many customers have reported improvements'. How many, which customers, and improvements in what, it does not say.",
+      "definition": "Words and phrases that create the impression something specific has been said when the claim is vague or empty: some people say, studies suggest, it is widely known. The speaker can later slip out of any commitment, which is where the name comes from.",
+      "confusedWith": {
+        "note": "A euphemism softens a specific statement. Weasel words avoid making a statement at all while sounding as if one was made."
+      },
+      "tryToday": "Once today, chase a 'some say' or 'studies show' to its source: who exactly, and where? A claim that dissolves under one question was never a claim.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Weasel_word"
+        }
+      ]
+    },
+    {
+      "id": "foot-in-the-door",
+      "term": "Foot-in-the-Door",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "You agree to sign the petition. Two weeks later the same organization asks for a full Saturday of volunteering, and refusing now feels _strangely inconsistent_.",
+      "definition": "A compliance tactic that secures agreement to a large request by first obtaining agreement to a small one. Having said yes once, people keep saying yes to stay consistent with their own earlier decision.",
+      "confusedWith": {
+        "id": "door-in-the-face",
+        "note": "Foot-in-the-door climbs from a small yes toward a big one. Door-in-the-face starts with an outsized ask so the real one looks reasonable by contrast."
+      },
+      "tryToday": "Evaluate each request as if it were the first. Your earlier yes answered an earlier question; it is not a debt.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Foot-in-the-door_technique"
+        }
+      ]
+    },
+    {
+      "id": "door-in-the-face",
+      "term": "Door-in-the-Face",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "Can you cover my whole weekend shift? After your no, the ask shrinks to just Saturday evening, and you hear yourself agree to the plan they wanted from the start.",
+      "definition": "A compliance tactic that opens with a large request expected to be refused, then follows with the smaller request that was the goal all along. The retreat feels like a concession, and people repay concessions.",
+      "confusedWith": {
+        "id": "foot-in-the-door",
+        "note": "Door-in-the-face shrinks an outrageous ask into the intended one. Foot-in-the-door grows a tiny ask into the intended one. Opposite directions, same destination: your yes."
+      },
+      "tryToday": "When a big ask shrinks to a small one, re-price the small ask from zero: would you have agreed if it had come first? Answer that question instead.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Door-in-the-face_technique"
+        }
+      ]
+    },
+    {
+      "id": "scarcity",
+      "term": "Scarcity",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "Only 2 rooms left at this price, says the booking site, as it said last night and will say tomorrow.",
+      "definition": "The principle that people assign more value to what seems scarce and less to what is abundant. Limited stock, closing offers, and countdown timers borrow this weighting whether or not the shortage is real.",
+      "confusedWith": {
+        "id": "loss-aversion",
+        "note": "Loss aversion is the underlying weighting: losses loom larger than gains. Scarcity tactics rent that machinery by converting a purchase into an avoided loss."
+      },
+      "tryToday": "When urgency appears, ask what changes if you simply wait a day. Real shortages survive the question; manufactured ones depend on you not asking it.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Scarcity_(social_psychology"
+        }
+      ]
+    },
+    {
+      "id": "authority-bias",
+      "term": "Authority Bias",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "The consultant's slide says exactly what your colleague said last month. This time, at the day rate and in the suit, everyone nods.",
+      "definition": "Attributing greater accuracy to the opinion of an authority figure, independent of its content. The title, the uniform, or the tone of certainty does the convincing before the argument starts.",
+      "confusedWith": {
+        "id": "halo-effect",
+        "note": "Authority bias borrows credibility from status: the title makes claims sound true. The halo effect spreads one appealing trait across a whole person. Related glows, different sources."
+      },
+      "tryToday": "Separate the two questions: is this person credentialed, and is this claim supported? Expertise raises the odds of the second; it never settles it.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Authority_bias"
+        }
+      ]
+    },
+    {
+      "id": "dark-patterns",
+      "term": "Dark Patterns",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Persuasion"
+      ],
+      "scenario": "Cancelling the subscription took eleven clicks, a phone call, and a form. Signing up had taken one tap.",
+      "definition": "User interfaces carefully crafted to trick you into things you did not intend: buying add-on insurance, signing up for recurring bills, sharing more data than you meant to. The design itself, not just the wording, does the manipulating.",
+      "confusedWith": {
+        "note": "A nudge steers a choice while leaving it free, and at least claims to serve your interests. A dark pattern is engineered against them."
+      },
+      "tryToday": "When an interface makes one path effortless and the other exhausting, treat the friction as information: someone paid for that asymmetry.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dark_pattern"
+        }
+      ]
+    },
+    {
+      "id": "steelmanning",
+      "term": "Steelmanning",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Constructive Communication"
+      ],
+      "scenario": "Before disagreeing, your colleague restates your idea more clearly than you managed to present it. Only then comes their objection, and you actually want to hear it.",
+      "definition": "Deliberately engaging the strongest form of the other person's argument, even one better than they actually presented. It applies the principle of charity: repair the argument's weak spots first, then respond to what remains.",
+      "confusedWith": {
+        "id": "strawman-argument",
+        "note": "The strawman weakens an argument to knock it down. The steelman strengthens it before answering. One wins the exchange; the other wins the understanding."
+      },
+      "tryToday": "Pick an opinion you reject and write its best case, the way its smartest defender would. If you cannot, your rejection has been running on the weak version.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Straw_man"
+        }
+      ]
+    },
+    {
+      "id": "active-listening",
+      "term": "Active Listening",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Constructive Communication"
+      ],
+      "scenario": "You summarize your friend's messy problem back to them in two sentences. They exhale: yes, that's it exactly. Only then do they want your advice.",
+      "definition": "Listening with the aim of understanding: attending fully to what is said in words and body, then reflecting it back so it can be confirmed and clarified. The speaker learns their point landed; the listener absorbs far more than by waiting to talk.",
+      "tryToday": "In one conversation today, earn the reply 'exactly': reflect back what you heard before adding anything of your own, and watch what it does to the temperature.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Active_listening"
+        }
+      ]
+    },
+    {
+      "id": "i-statements",
+      "term": "I-Statements",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Constructive Communication"
+      ],
+      "scenario": "'You never listen' starts a war. 'I felt ignored in that meeting' starts a conversation. Same grievance, different opening.",
+      "definition": "Expressing feelings and concerns from the first-person perspective, owning the feeling and naming the behavior without accusation: I get anxious when the report comes late, instead of you are always late. The listener hears a report, not a charge, and stays out of defense.",
+      "confusedWith": {
+        "id": "nonviolent-communication",
+        "note": "An I-statement is a sentence form. Nonviolent Communication is a full framework, observation to request, with I-statements working inside it."
+      },
+      "tryToday": "Convert one 'you always' or 'you never' into: I feel X when Y happens. Watch whether the answer defends or engages.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/I-message"
+        }
+      ]
+    },
+    {
+      "id": "nonviolent-communication",
+      "term": "Nonviolent Communication",
+      "category": "communicating",
+      "breadcrumb": [
+        "Communicating",
+        "Constructive Communication"
+      ],
+      "scenario": "Instead of 'this place is always a mess', your flatmate tries: the dishes from Tuesday are still in the sink, I need some order to wind down, could we clear them tonight? It works embarrassingly well.",
+      "definition": "A communication process developed by Marshall Rosenberg built on four components: observation without evaluation, feelings, needs, and requests. The aim is to reduce conflict by expressing what is needed rather than who is wrong.",
+      "confusedWith": {
+        "id": "i-statements",
+        "note": "Nonviolent Communication is the full framework; the I-statement is one tool with the same spirit. You can use the sentence form without ever learning the process."
+      },
+      "tryToday": "Run one complaint through the four steps: what did you observe, what do you feel, what do you need, what exactly do you request? Most complaints turn out to be missing step four.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nonviolent_Communication"
+        }
+      ]
     }
   ],
   "groups": [
     {
       "id": "self",
-      "label": "Inner workings"
+      "label": "Self"
     },
     {
       "id": "world",
-      "label": "Ideas & culture"
+      "label": "World"
     }
   ],
   "categories": [
@@ -2828,25 +4195,43 @@
       "id": "thinking",
       "label": "Thinking",
       "group": "self",
-      "front": "scenario"
+      "front": "scenario",
+      "branches": [
+        "Cognitive Biases & Distortions",
+        "Mental Models",
+        "Mindsets"
+      ]
     },
     {
       "id": "feeling",
       "label": "Feeling",
       "group": "self",
-      "front": "scenario"
+      "front": "scenario",
+      "branches": [
+        "Emotion Families",
+        "Emotional Skills"
+      ]
     },
     {
       "id": "relating",
       "label": "Relating",
       "group": "self",
-      "front": "scenario"
+      "front": "scenario",
+      "branches": [
+        "Reading People",
+        "Social Forces"
+      ]
     },
     {
       "id": "communicating",
       "label": "Communicating",
       "group": "self",
-      "front": "scenario"
+      "front": "scenario",
+      "branches": [
+        "Logical Fallacies",
+        "Persuasion",
+        "Constructive Communication"
+      ]
     },
     {
       "id": "philosophy",

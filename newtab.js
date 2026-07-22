@@ -9,7 +9,13 @@
      balance:    "proportional" | "balanced"      // random over all cards, or category first, then card
    Daily pick is remembered under "metabDaily" = { date: "YYYY-MM-DD", id }. */
 
-const DEFAULT_SETTINGS = { categories: {}, branches: {}, frequency: "tab", balance: "proportional" };
+const DEFAULT_SETTINGS = { categories: {}, branches: {}, frequency: "tab", balance: "proportional", theme: "system" };
+
+/* Sets the palette. "system" (or anything unset) follows the OS via CSS;
+   "light"/"dark" force the palette regardless of the OS setting. */
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme || "system");
+}
 
 /* Filled from the dataset's categories manifest on init. */
 let categoryMeta = {};
@@ -113,6 +119,7 @@ async function init() {
   settings = Object.assign({}, DEFAULT_SETTINGS, stored.metabSettings || {});
   settings.categories = settings.categories || {};
   settings.branches = settings.branches || {};
+  applyTheme(settings.theme);
   buildPool();
 
   document.getElementById("reveal-btn").addEventListener("click", reveal);
@@ -195,6 +202,14 @@ function render(c) {
   const isDescription = meta && meta.front === "description";
   document.getElementById("back-btn").innerHTML =
     "&larr; " + (isDescription ? "Back to the description" : "Back to the situation");
+
+  /* Person cards (world branches naming an individual) ask "Who is this?";
+     everything else asks "What is this?". Extend PERSON_BRANCHES as new
+     person branches (e.g. Writers) are added. */
+  const PERSON_BRANCHES = ["Philosophers", "Artists", "Writers"];
+  const branch = c.breadcrumb && c.breadcrumb[1];
+  document.getElementById("reveal-btn").textContent =
+    PERSON_BRANCHES.includes(branch) ? "Who is this?" : "What is this?";
 
   const scenarioView = document.getElementById("scenario-view");
   const conceptView = document.getElementById("concept-view");

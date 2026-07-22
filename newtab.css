@@ -9,8 +9,22 @@
   --shadow: 0 2px 24px rgba(0, 0, 0, 0.07);
 }
 
+/* Dark palette. Applied when the user picks Dark (data-theme="dark"), or when
+   the theme is System (no data-theme of light/dark) and the OS is in dark mode.
+   data-theme is set on <html> by newtab.js / options.js from the saved setting. */
+:root[data-theme="dark"] {
+  --bg: #1a1817;
+  --card-bg: #232020;
+  --text: #ececec;
+  --text-soft: #9a9a9a;
+  --accent: #d98b75;
+  --btn-text: #2a1712;
+  --border: #363130;
+  --shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
     --bg: #1a1817;
     --card-bg: #232020;
     --text: #ececec;
@@ -333,4 +347,18 @@ body {
   margin-top: 18px;
   font-size: 13px;
   color: var(--text-soft);
+}
+
+/* Little ghost beside the Dark theme option. Soft accent, nudged to sit on the
+   text baseline. Its eyes are cut from the card background via currentColor. */
+.theme-ghost {
+  color: var(--accent);
+  vertical-align: -3px;
+  margin-left: 4px;
+}
+
+/* Eyes cut from the panel background. Set via stylesheet, not an SVG fill
+   attribute, because var() is unreliable in presentation attributes. */
+.theme-ghost .ghost-eye {
+  fill: var(--card-bg);
 }

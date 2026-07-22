@@ -5,7 +5,13 @@
    get indented sub-toggles. Datasets without a manifest fall back to a flat
    list derived from the concepts, so nothing breaks on older data. */
 
-const DEFAULT_SETTINGS = { categories: {}, branches: {}, frequency: "tab", balance: "proportional" };
+const DEFAULT_SETTINGS = { categories: {}, branches: {}, frequency: "tab", balance: "proportional", theme: "system" };
+
+/* Sets the palette on this page. "system" follows the OS via CSS;
+   "light"/"dark" force the palette. Mirrors applyTheme in newtab.js. */
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme || "system");
+}
 
 let settings = DEFAULT_SETTINGS;
 let manifest = { groups: [], categories: [] };
@@ -157,6 +163,7 @@ async function init() {
   settings = Object.assign({}, DEFAULT_SETTINGS, stored.metabSettings || {});
   settings.categories = settings.categories || {};
   settings.branches = settings.branches || {};
+  applyTheme(settings.theme);
 
   manifest = (dataRes.categories && dataRes.categories.length)
     ? { groups: dataRes.groups || [{ id: "all", label: "" }], categories: dataRes.categories }
@@ -165,6 +172,11 @@ async function init() {
   renderToggles();
   bindRadios("frequency", "frequency");
   bindRadios("balance", "balance");
+  bindRadios("theme", "theme");
+  /* Apply the theme live as the user switches, on top of the saved value. */
+  document.querySelectorAll('input[name="theme"]').forEach((radio) => {
+    radio.addEventListener("change", () => { if (radio.checked) applyTheme(radio.value); });
+  });
 }
 
 init();

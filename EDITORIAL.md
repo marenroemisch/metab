@@ -1,6 +1,19 @@
 # Metab Editorial Rules
 
-Content style rules for every entry in `data/concepts.json`. These apply to AI-drafted batches and community contributions alike. Structural rules (categories, breadcrumbs) live in `TAXONOMY.md`.
+## Voice
+
+What a Metab card sounds like, regardless of which model drafts it:
+
+- Second person, present tense. The reader is in the scene, not reading about one.
+- Concrete nouns and short declaratives. One idea per sentence. Plain words a non-native reader catches on first pass.
+- The card trusts the reader: no exclamation marks, no cheerleading, no "fascinating", no addressing the reader as a student.
+- Definitions sound like a knowledgeable friend, not a textbook: mechanism and consequence, minimal jargon, no hedging filler ("often", "tends to" only where the science requires it).
+- Wit is welcome only where the concept itself is the joke's engine; never decoration.
+- No em dashes, no rule-of-three rhythm, no "not X, but Y" constructions, no mic-drop fragments.
+
+**Gold standards** - when in doubt, imitate these three: `disillusionment` (feeling card), `curse-of-knowledge` (scenario and confused-pair craft), `stoicism` (description card). New drafts should be indistinguishable from them in voice.
+
+Content style rules for every entry in `concepts.json`. These apply to AI-drafted batches and community contributions alike. Structural rules (categories, breadcrumbs) live in `TAXONOMY.md`.
 
 ## Definitions
 
@@ -26,6 +39,7 @@ Content style rules for every entry in `data/concepts.json`. These apply to AI-d
 ## Links
 
 10. **Wikipedia first, Wiktionary as fallback.** No other sources unless neither covers the concept, and then only stable, non-commercial pages.
+10a. **Approved derivation upgrades.** Where the Wikipedia lead is weak, definitions may instead be derived from the Stanford Encyclopedia of Philosophy (world group) or the APA Dictionary of Psychology (Feeling, Thinking, Relating). The same discipline applies: fetch, derive, verify. The reader-facing link stays Wikipedia/Wiktionary; the review doc notes which source the definition derives from.
 11. Every link must be verified to resolve with real content before shipping. Client-rendered pages that cannot be machine-verified count as unverified.
 
 ## Often confused with
@@ -40,6 +54,18 @@ Content style rules for every entry in `data/concepts.json`. These apply to AI-d
 16. **Reveal order:** term and breadcrumb, definition, origin, opposed, related, often confused with, try today, links. Definitions remain source-derived (rule 3 verbatim); origin dates and opposition claims are facts and get verified against the linked source at batch time like links. No quality verdicts on ideas, artists, or works (rule 2, extended). Try Today only where the concept yields a non-generic action; common for ideas and movements, rare for persons, better absent than forced.
 
 17. **Bridge rule (should, not must).** Every world card tries to name one link into the self group, in related, often-confused-with, or the definition's second sentence: Stoicism points at cognitive reappraisal, Impressionism at perception. Skip it where it would be forced; a fake bridge is worse than none. This is what keeps the world group tethered to the me-tab thesis.
+
+## Added from review (2026-07-22)
+
+18. **No product or structure talk.** A card never refers to Metab's own architecture: no "card", "this collection", "this list", or a category named as a container ("its card sits in the Feeling category", "a card in Relating's queue", "it has a card of its own here"). The reader is looking at one idea, not browsing a product. Bridges (rule 17) name the other concept directly ("the actor-observer bias"), never its location in the app. The internal `id` link on a related term stays; only the reader-facing wording is bound by this.
+
+19. **Plain language, hard gate.** Beyond the Voice section: figurative and idiomatic phrases a non-native reader can misread are banned in scenarios and definitions. "Calling card", "engine room", "put the worry away", "feeling further away" all failed. Use the literal word: "best-known image", "drop the subject", "feel more distant". The first sentence carries the most weight and must be the simplest; a dense, clause-stacked opener fails the check even when every word is correct.
+
+20. **Try Today returns insight, it does not enact the concept.** "Try to be / avoid / practice [the concept] today" fails even when it sounds specific, because these situations do not arrive on command and the prompt just restates the card. A good Try Today points at a reflection or observation that hands back real self-knowledge: recall a recent instance, notice your own first reaction, find the concept already at work in your day. It may use the same angle the card explains, but it must not re-explain it. Anchor it in the concept's actual substance (for a thinker, a practice they actually taught), not a motivational-quote paraphrase.
+
+21. **Person fronts ask "who", concept fronts ask "what".** Person cards (branches Philosophers, Artists, and future Writers) read as a portrait of an individual; the extension's reveal button asks "Who is this?" for them and "What is this?" for everything else (`newtab.js`, `PERSON_BRANCHES`). Keep the front a portrait, not a "what is".
+
+22. **Movements and styles name what the style is, not only its history.** For an art movement or style, the definition must state what the style introduced or is recognized for, its visible traits, so a reader who has never heard of it can tell a style from a mere institution (Bauhaus: clean lines, geometric shapes, function over ornament). Do not overcorrect into a trait checklist; one clear sentence of description is enough.
 
 ## Process
 
